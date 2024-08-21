@@ -25,7 +25,7 @@ const Hero = () => {
       className="bg-[#040404] text-[#D8DBD5] px-5 h-screen flex items-center justify-center flex-col"
     >
       <div className="text-center">
-        <h1 className="text-5xl font-bold mb-4">Welcome to Aspire Sports Academy</h1>
+        <h1 className="text-5xl font-bold mb-4">Welcome to <span className='uppercase'>Aspire Sports Academy</span></h1>
         <p className="text-xl mb-8 text-[#7C7C7C]">Unlock Your Potential, Achieve Your Goals</p>
         <Link
           to="services"

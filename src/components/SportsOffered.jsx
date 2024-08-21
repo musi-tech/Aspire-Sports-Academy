@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FaSwimmer, FaVolleyballBall, FaBoxing } from 'react-icons/fa';
+import { FaSwimmer, FaVolleyballBall } from 'react-icons/fa';
 import { GiCricketBat, GiGymBag } from 'react-icons/gi';
 import { IoFootball } from "react-icons/io5";
 import { MdOutlineSportsTennis, MdSportsBasketball } from "react-icons/md";
@@ -10,18 +10,18 @@ import { PiBoxingGloveFill } from "react-icons/pi";
 import { RiPingPongFill } from "react-icons/ri";
 
 const sports = [
-  { name: 'Swimming', icon: <FaSwimmer />, pricing: { monthly: '₹ 3,000/-', quarterly: '₹ 8,100/-' } },
-  { name: 'Cricket', icon: <GiCricketBat />, pricing: { monthly: '₹ 2,500/-', quarterly: '₹ 6,750/-' } },
-  { name: 'Football', icon: <IoFootball />, pricing: { monthly: '₹ 2,500/-', quarterly: '₹ 5,900/-' } },
-  { name: 'Toddler Discovery Program', icon: <CgGym />, pricing: { monthly: '₹ 2,500/-' } },
-  { name: 'Volleyball', icon: <FaVolleyballBall />, pricing: { monthly: '₹ 2,500/-' } },
-  { name: 'Boxing', icon: <PiBoxingGloveFill />, pricing: { monthly: '₹ 3,000/-', quarterly: '₹ 8,100/-' } },
-  { name: 'Badminton', icon: <MdOutlineSportsTennis />, pricing: { monthly: '₹ 2,500/-' } },
-  { name: 'Lawn Tennis', icon: <MdOutlineSportsTennis />, pricing: { monthly: '₹ 2,500/-' } },
-  { name: 'Yoga', icon: <TbYoga />, pricing: { monthly: '₹ 1,800/-', quarterly: '₹ 4,860/-' } },
-  { name: 'Gymnastic', icon: <GiGymBag />, pricing: { monthly: '₹ 2,000/-' } },
-  { name: 'Basketball', icon: <MdSportsBasketball />, pricing: { monthly: '₹ 1,500/-' } },
-  { name: 'Pickleball', icon: <RiPingPongFill />, pricing: { monthly: '₹ 2,500/-' } },
+  { name: 'Swimming', icon: <FaSwimmer />},
+  { name: 'Cricket', icon: <GiCricketBat />},
+  { name: 'Football', icon: <IoFootball />},
+  { name: 'Toddler Discovery Program', icon: <CgGym /> },
+  { name: 'Volleyball', icon: <FaVolleyballBall /> },
+  { name: 'Boxing', icon: <PiBoxingGloveFill /> },
+  { name: 'Badminton', icon: <MdOutlineSportsTennis /> },
+  { name: 'Lawn Tennis', icon: <MdOutlineSportsTennis /> },
+  { name: 'Yoga', icon: <TbYoga /> },
+  { name: 'Gymnastic', icon: <GiGymBag /> },
+  { name: 'Basketball', icon: <MdSportsBasketball /> },
+  { name: 'Pickleball', icon: <RiPingPongFill /> },
 ];
 
 const SportsOffered = () => {
@@ -36,16 +36,12 @@ const SportsOffered = () => {
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="bg-[#1F1F1F] p-6 rounded-lg shadow-lg flex flex-col items-center justify-center text-center hover:bg-[#6CD123] hover:text-[#040404] transition-colors duration-300"
+              className="bg-[#1F1F1F] p-6 rounded-lg shadow-lg flex flex-col items-center justify-center text-center hover:bg-[#6CD123]  transition-colors duration-300 group"
             >
-              <div className="mb-4 text-4xl text-[#6CD123]">
+              <div className="mb-4 text-4xl text-[#6CD123] group-hover:text-white transition-colors duration-300">
                 {sport.icon}
               </div>
               <h3 className="text-xl font-semibold mb-2">{sport.name}</h3>
-              <div className="mt-2">
-                <p>Monthly: {sport.pricing.monthly}</p>
-                {sport.pricing.quarterly && <p>Quarterly: {sport.pricing.quarterly}</p>}
-              </div>
             </motion.div>
           ))}
         </div>

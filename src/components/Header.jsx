@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import { FaHome, FaDumbbell, FaUsers, FaEnvelope, FaBars, FaTimes } from 'react-icons/fa';
 import { MdCardMembership } from "react-icons/md";
 import { Link } from 'react-scroll';
+const logo = require('../assets/aspire_logo_hori.svg').default;
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -18,7 +19,7 @@ const Navbar = () => {
       className="bg-[#040404] text-[#D8DBD5] py-4 px-6 fixed w-full z-10 shadow-lg"
     >
       <nav className="flex items-center justify-between container mx-auto">
-        <div className="text-2xl text-[#6CD123] font-bold uppercase">Aspire Sports Academy</div>
+        <img src={logo} alt="logo" />
         <button onClick={toggleMenu} className="lg:hidden text-[#D8DBD5] text-2xl z-50">
           {isOpen ? <FaTimes /> : <FaBars />}
         </button>

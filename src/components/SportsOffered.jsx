@@ -26,26 +26,37 @@ const sports = [
 
 const SportsOffered = () => {
   return (
-    <section id="sports" className="py-16 bg-[#040404] text-[#D8DBD5]">
+    <section id="sports" className="py-16 bg-gradient-to-r from-[#040404] to-[#0A0A0A] text-[#D8DBD5]">
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-bold text-center mb-12 text-[#6CD123]">Sports We Offer</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <h2 className="text-5xl font-extrabold text-center mb-16 text-transparent bg-clip-text bg-gradient-to-r from-[#6CD123] to-[#B5FF4D]">
+          Sports We Offer
+        </h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {sports.map((sport, index) => (
             <motion.div
               key={index}
-              initial={{ opacity: 0, scale: 0.8 }}
+              initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="bg-[#1F1F1F] p-6 rounded-lg shadow-lg flex flex-col items-center justify-center text-center hover:bg-[#6CD123]  transition-colors duration-300 group"
+              transition={{ duration: 0.6, delay: index * 0.15 }}
+              className="relative p-8 rounded-xl shadow-lg hover:shadow-2xl bg-gradient-to-br from-[#1F1F1F] to-[#333333] group overflow-hidden hover:bg-gradient-to-bl hover:from-[#6CD123] hover:to-[#3A8C12] transition-all duration-500"
             >
-              <div className="mb-4 text-4xl text-[#6CD123] group-hover:text-white transition-colors duration-300">
-                {sport.icon}
+              <div className="absolute inset-0 w-full h-full border-2 border-transparent group-hover:border-[#B5FF4D] transition-all duration-500"></div>
+              <div className="relative flex flex-col items-center justify-center text-center">
+                <motion.div
+                  className="mb-6 text-5xl text-[#6CD123] group-hover:text-white transform transition-transform duration-500 group-hover:rotate-12"
+                  whileHover={{ rotate: 360 }}
+                  transition={{ duration: 0.7 }}
+                >
+                  {sport.icon}
+                </motion.div>
+                <h3 className="text-2xl font-bold text-[#D8DBD5] group-hover:text-white transition-colors duration-500 mb-3">
+                  {sport.name}
+                </h3>
               </div>
-              <h3 className="text-xl font-semibold mb-2">{sport.name}</h3>
             </motion.div>
           ))}
         </div>
-        <p className="text-center mt-8 text-sm">--------- Terms And Conditions Applied ---------</p>
+        <p className="text-center mt-10 text-sm text-[#6CD123]">--------- Terms And Conditions Applied ---------</p>
       </div>
     </section>
   );

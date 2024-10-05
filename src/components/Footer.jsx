@@ -1,4 +1,3 @@
-// components/Footer.js
 import React from 'react';
 import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from 'react-icons/fa';
 
@@ -10,13 +9,18 @@ const Footer = () => {
           <a href="/" className="text-2xl font-bold text-[#6CD123]">Aspire Sports Academy</a>
         </div>
         <div className="flex justify-center space-x-4 mb-4">
-          <a href="#" className="text-xl hover:text-[#6CD123]"><FaFacebook /></a>
-          <a href="#" className="text-xl hover:text-[#6CD123]"><FaTwitter /></a>
-          <a href="#" className="text-xl hover:text-[#6CD123]"><FaInstagram /></a>
-          <a href="#" className="text-xl hover:text-[#6CD123]"><FaLinkedin /></a>
+          <a href="#" className="text-xl hover:text-[#6CD123]" aria-label="Facebook"><FaFacebook /></a>
+          <a href="#" className="text-xl hover:text-[#6CD123]" aria-label="Twitter"><FaTwitter /></a>
+          <a href="#" className="text-xl hover:text-[#6CD123]" aria-label="Instagram"><FaInstagram /></a>
+          <a href="#" className="text-xl hover:text-[#6CD123]" aria-label="LinkedIn"><FaLinkedin /></a>
         </div>
+        <div className="flex justify-center space-x-4 mb-4">
+          <a href="/terms-and-conditions" className="text-lg hover:text-[#6CD123]" target="_blank" rel="noopener noreferrer">Terms of Service</a>
+          <a href="/privacy-policy" className="text-lg hover:text-[#6CD123]" target="_blank" rel="noopener noreferrer">Privacy Policy</a>
+        </div>
+
         <p>&copy; 2024 Aspire Sports Academy. All rights reserved.</p>
-        <span>Developed by: <a href="https://musitech.in" className='text-[#6CD123]'>MusiTech</a></span>
+        <span>Developed by: <a href="https://musitech.in" className="text-[#6CD123]" target="_blank" rel="noopener noreferrer">MusiTech</a></span>
       </div>
     </footer>
   );

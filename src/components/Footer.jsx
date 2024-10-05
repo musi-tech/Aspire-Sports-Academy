@@ -1,5 +1,7 @@
 import React from 'react';
-import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from 'react-icons/fa';
+import { FaFacebook, FaInstagram, FaLinkedin } from 'react-icons/fa';
+import { FaXTwitter } from "react-icons/fa6"; // assuming this icon is correct
+
 
 const Footer = () => {
   return (
@@ -9,10 +11,10 @@ const Footer = () => {
           <a href="/" className="text-2xl font-bold text-[#6CD123]">Aspire Sports Academy</a>
         </div>
         <div className="flex justify-center space-x-4 mb-4">
-          <a href="#" className="text-xl hover:text-[#6CD123]" aria-label="Facebook"><FaFacebook /></a>
-          <a href="#" className="text-xl hover:text-[#6CD123]" aria-label="Twitter"><FaTwitter /></a>
-          <a href="#" className="text-xl hover:text-[#6CD123]" aria-label="Instagram"><FaInstagram /></a>
-          <a href="#" className="text-xl hover:text-[#6CD123]" aria-label="LinkedIn"><FaLinkedin /></a>
+          <a href="#" className="text-2xl hover:text-[#6CD123]" aria-label="Facebook"><FaFacebook /></a>
+          <a href="#" className="text-2xl hover:text-[#6CD123]" aria-label="Twitter"><FaXTwitter /></a>
+          <a href="#" className="text-2xl hover:text-[#6CD123]" aria-label="Instagram"><FaInstagram /></a>
+          <a href="#" className="text-2xl hover:text-[#6CD123]" aria-label="LinkedIn"><FaLinkedin /></a>
         </div>
         <div className="flex justify-center space-x-4 mb-4">
           <a href="/terms-and-conditions" className="text-lg hover:text-[#6CD123]" target="_blank" rel="noopener noreferrer">Terms of Service</a>

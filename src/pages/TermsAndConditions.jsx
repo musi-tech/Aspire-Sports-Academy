@@ -25,7 +25,7 @@ const TermsOfService = () => {
         variants={pageVariants}
         transition={pageTransition}
       >
-        <h1 className="text-4xl font-bold mb-6 mt-12 text-center lg:text-5xl py-12 lg:mb-8">Terms of Service</h1>
+        <h1 className="text-4xl font-bold mb-6 mt-12 text-center lg:text-5xl py-12 lg:mb-8 ">Terms of Service</h1>
 
         <section className="mb-8">
           <h2 className="text-3xl font-semibold mb-4">1. Introduction</h2>
@@ -112,9 +112,9 @@ const TermsOfService = () => {
             For any questions or concerns regarding these Terms, please contact us at:
           </p>
           <ul className="list-none pl-0 text-lg">
-            <li>Email: <a href="mailto:info@aspiresportsclub.in" className="text-blue-400 hover:underline">info@aspiresportsclub.in</a></li>
-            <li>Phone: <a href="tel:+917559344845" className="text-blue-400 hover:underline">+91 7559344845</a></li>
-            <li>WhatsApp: <a href="https://wa.me/917559344845" className="text-blue-400 hover:underline" target="_blank" rel="noopener noreferrer">Chat with us</a></li>
+            <li>Email: <a href="mailto:info@aspiresportsclub.in" className="text-green-700 hover:underline">info@aspiresportsclub.in</a></li>
+            <li>Phone: <a href="tel:+917559344845" className="text-green-700 hover:underline">+91 7559344845</a></li>
+            <li>WhatsApp: <a href="https://wa.me/917559344845" className="text-green-700 hover:underline" target="_blank" rel="noopener noreferrer">Chat with us</a></li>
           </ul>
         </section>
 

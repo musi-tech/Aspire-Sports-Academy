@@ -100,8 +100,8 @@ const PrivacyPolicy = () => {
                         If you have any questions or concerns about this Privacy Policy or our data practices, please contact us at:
                     </p>
                     <ul className="list-none pl-0 text-lg text-gray-300">
-                        <li>Email: <a href="mailto:info@aspire-sports.com" className="text-blue-400 hover:underline">info@aspire-sports.com</a></li>
-                        <li>Phone: <a href="tel:+919579455256" className="text-blue-400 hover:underline">+91 9579455525</a></li>
+                        <li>Email: <a href="mailto:info@aspire-sports.com" className="text-green-700 hover:underline">info@aspire-sports.com</a></li>
+                        <li>Phone: <a href="tel:+919579455256" className="text-green-700 hover:underline">+91 9579455525</a></li>
                         <li>Address: [Insert Physical Address, if applicable]</li>
                     </ul>
                 </section>
@@ -109,7 +109,7 @@ const PrivacyPolicy = () => {
                 <section className="mb-8">
                     <h2 className="text-3xl font-semibold mb-4 text-gray-300">10. Terms of Service</h2>
                     <p className="text-lg text-gray-300 leading-relaxed">
-                        Your use of our Site is also governed by our Terms of Service, which can be found <a href="[Insert Link]" className="text-blue-400 hover:underline">here</a>.
+                        Your use of our Site is also governed by our Terms of Service, which can be found <a href="[Insert Link]" className="text-green-700 hover:underline">here</a>.
                     </p>
                 </section>
             </motion.div>

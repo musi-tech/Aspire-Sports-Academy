@@ -63,7 +63,7 @@ const Navbar = () => {
           </li>
           <li className="hidden lg:flex items-center">
             <Link to="membership-plan" smooth={true} duration={500} className="flex items-center hover:text-[#6CD123]">
-              <MdCardMembership className="mr-2" /> MemberShip Plan
+              <MdCardMembership className="mr-2" /> MemberShip 
             </Link>
           </li>
           <li className="hidden lg:flex items-center">

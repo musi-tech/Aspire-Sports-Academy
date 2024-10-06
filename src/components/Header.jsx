@@ -5,7 +5,7 @@ import { FaHome, FaDumbbell, FaUsers, FaEnvelope, FaBars, FaTimes } from 'react-
 import { MdCardMembership } from "react-icons/md";
 import { Link as ScrollLink } from 'react-scroll';
 import { Link } from 'react-router-dom';  // Use Link from react-router-dom for page navigation
-const logo = require('../assets/aspire_logo_hori.svg').default;
+const logo = require('../assets/logo.svg').default;
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -17,10 +17,14 @@ const Navbar = () => {
       initial={{ opacity: 0, y: -50 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
-      className="bg-[#040404] text-[#D8DBD5] py-4 px-6 fixed w-full z-10 shadow-lg"
+      className="bg-[#040404] text-[#D8DBD5] py-2 px-6 fixed w-full z-10 shadow-lg"
     >
       <nav className="flex items-center justify-between container mx-auto">
-        <img src={logo} alt="logo" />
+        <img
+          src={logo}
+          alt="logo"
+          className="h-12 w-auto lg:h-20"
+        />
         <button onClick={toggleMenu} className="lg:hidden text-[#D8DBD5] text-2xl z-50">
           {isOpen ? <FaTimes /> : <FaBars />}
         </button>
@@ -53,7 +57,7 @@ const Navbar = () => {
               <FaEnvelope className="mr-2" /> Contact
             </Link>
           </li>
-          
+
           {/* Desktop Links */}
           <li className="hidden lg:flex items-center">
             <Link to="/home" className="flex items-center hover:text-[#6CD123]">
@@ -72,7 +76,7 @@ const Navbar = () => {
           </li>
           <li className="hidden lg:flex items-center">
             <Link to="/membership" className="flex items-center hover:text-[#6CD123]">
-              <MdCardMembership className="mr-2" /> Membership 
+              <MdCardMembership className="mr-2" /> Membership
             </Link>
           </li>
           <li className="hidden lg:flex items-center">

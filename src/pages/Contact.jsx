@@ -35,14 +35,14 @@ const ContactForm = () => {
             <div className="flex flex-col items-center lg:items-start">
               <FaEnvelope className="text-4xl text-[#6CD123] mb-6" />
               <h3 className="text-3xl font-bold mb-4">Email Us</h3>
-              <p className="text-lg text-[#CCCCCC]">example@example.com</p>
+              <p className="text-lg text-[#CCCCCC]">contact@aspiresportsclub.com</p>
             </div>
 
             {/* Phone */}
             <div className="flex flex-col items-center lg:items-start">
               <FaPhoneAlt className="text-4xl text-[#6CD123] mb-6" />
               <h3 className="text-3xl font-bold mb-4">Call Us</h3>
-              <p className="text-lg text-[#CCCCCC]">+123 456 7890</p>
+              <p className="text-lg text-[#CCCCCC]">+91 9378404040</p>
             </div>
 
             {/* WhatsApp */}
@@ -50,7 +50,7 @@ const ContactForm = () => {
               <FaWhatsapp className="text-4xl text-[#25D366] mb-6" />
               <h3 className="text-3xl font-bold mb-4">WhatsApp Us</h3>
               <a
-                href="https://wa.me/1234567890"
+                href="https://wa.me/+919378404040"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block bg-[#25D366] text-[#FFFFFF] px-8 py-2 mt-1 rounded-lg font-bold hover:bg-[#1EBB5A] transition-all duration-300"

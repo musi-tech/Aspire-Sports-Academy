@@ -1,25 +1,29 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { Pagination, Autoplay } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
 
 const testimonials = [
-  { name: 'John Doe', text: `Sports Academy has transformed my fitness journey. Highly recommended!`, image: 'https://placehold.co/400' },
-  { name: 'Jane Smith', text: `The coaching staff is top-notch. I've improved tremendously in just a few months.`, image: 'https://placehold.co/400' },
-  { name: 'Mike Johnson', text: `Great facilities and a welcoming community. It's more than just a gym!`, image: 'https://placehold.co/400' },
+  { name: 'John Doe', text: 'Sports Academy has transformed my fitness journey. Highly recommended!', image: 'https://placehold.co/400' },
+  { name: 'Jane Smith', text: 'The coaching staff is top-notch. I\'ve improved tremendously in just a few months.', image: 'https://placehold.co/400' },
+  { name: 'Mike Johnson', text: 'Great facilities and a welcoming community. It\'s more than just a gym!', image: 'https://placehold.co/400' },
 ];
 
 const Testimonials = () => {
   return (
     <section className="py-16 bg-gradient-to-r from-[#040404] to-[#0A0A0A] text-[#D8DBD5]">
-      <div className="container mx-auto px-4">
+      <div className="max-w-7xl mx-auto px-4">
         <h2 className="text-5xl font-extrabold text-center mb-12 text-transparent bg-clip-text bg-gradient-to-r from-[#6CD123] to-[#B5FF4D]">
           What Our Members Say
         </h2>
         <Swiper
+          modules={[Pagination, Autoplay]}
           spaceBetween={30}
           slidesPerView={1}
+          autoplay={{ delay: 3000, disableOnInteraction: false }} // Set autoplay delay to 3 seconds
+          pagination={{ clickable: true }}
           breakpoints={{
             640: {
               slidesPerView: 1,

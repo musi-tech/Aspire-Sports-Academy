@@ -17,8 +17,8 @@ const Footer = () => {
           <a href="#" className="text-2xl hover:text-[#6CD123]" aria-label="LinkedIn"><FaLinkedin /></a>
         </div>
         <div className="flex justify-center space-x-4 mb-4">
-          <a href="/terms-and-conditions" className="text-lg hover:text-[#6CD123]" target="_blank" rel="noopener noreferrer">Terms of Service</a>
-          <a href="/privacy-policy" className="text-lg hover:text-[#6CD123]" target="_blank" rel="noopener noreferrer">Privacy Policy</a>
+          <a href="/terms-and-conditions" className="text-lg hover:text-[#6CD123]" rel="noopener noreferrer">Terms of Service</a>
+          <a href="/privacy-policy" className="text-lg hover:text-[#6CD123]" rel="noopener noreferrer">Privacy Policy</a>
         </div>
 
         <p>&copy; 2024 Aspire Sports Academy. All rights reserved.</p>

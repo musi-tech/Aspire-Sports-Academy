@@ -43,7 +43,7 @@ const ContactForm = () => {
 
             {/* WhatsApp */}
             <div className="flex flex-col items-center lg:items-start">
-              <FaWhatsapp className="text-4xl text-[#25D366] mb-6" />
+              <FaWhatsapp className="text-4xl text-[#6cd123] mb-6" />
               <h3 className="text-3xl font-bold mb-4">WhatsApp Us</h3>
               <a
                 href="https://wa.me/+919378404040"

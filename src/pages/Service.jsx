@@ -42,7 +42,7 @@ const Services = () => {
     <Header />
 
     <section id="services" className="py-16 bg-gradient-to-r from-[#040404] to-[#0A0A0A] text-[#D8DBD5]">
-      <div className="container mx-auto px-4 py-12">
+      <div className="container mx-auto px-4 py-16">
         <h2 className="text-5xl font-extrabold text-center mb-16 text-transparent bg-clip-text bg-gradient-to-r from-[#6CD123] to-[#B5FF4D]">
           Our Services
         </h2>

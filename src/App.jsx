@@ -7,6 +7,7 @@ import Service from './pages/Service';
 import Sports from './pages/Sports';
 import Membership from './pages/Membership';
 import Contact from './pages/Contact';
+import About from './pages/About';
 
 
 
@@ -22,6 +23,7 @@ function App() {
       <Route path="/sports" element={<Sports />} />
       <Route path="/membership" element={<Membership />} />
       <Route path="/contact" element={<Contact />} />
+      <Route path="/about" element={<About />} />
     </Routes>
   );
 }

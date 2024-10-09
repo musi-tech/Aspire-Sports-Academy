@@ -1,89 +1,66 @@
 // components/Navbar.js
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { FaHome, FaDumbbell, FaUsers, FaEnvelope, FaBars, FaTimes } from 'react-icons/fa';
-import { MdCardMembership } from "react-icons/md";
-import { Link as ScrollLink } from 'react-scroll';
-import { Link } from 'react-router-dom';  // Use Link from react-router-dom for page navigation
+import { FaHome, FaDumbbell, FaEnvelope, FaBars, FaTimes, FaFootballBall } from 'react-icons/fa';
+import { MdCardMembership, MdInfo } from "react-icons/md";
+import { Link } from 'react-router-dom';
 const logo = require('../assets/logo.svg').default;
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-
   const toggleMenu = () => setIsOpen(!isOpen);
 
   return (
     <motion.header
       initial={{ opacity: 0, y: -50 }}
       animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.5 }}
-      className="bg-[#040404] text-[#D8DBD5] py-2 px-6 fixed w-full z-10 shadow-lg"
+      transition={{ duration: 0.6, ease: "easeOut" }}
+      className="bg-gradient-to-r from-black via-gray-900 to-gray-800 text-white py-2 px-6 fixed w-full z-20 shadow-xl backdrop-blur-md"
     >
-      <nav className="flex items-center justify-between container mx-auto">
-        <img
-          src={logo}
-          alt="logo"
-          className="h-12 w-auto lg:h-20"
-        />
-        <button onClick={toggleMenu} className="lg:hidden text-[#D8DBD5] text-2xl z-50">
+      <nav className="container mx-auto flex items-center justify-between">
+        {/* Logo Section */}
+        <img src={logo} alt="logo" className="h-16 w-auto lg:h-24 cursor-pointer" />
+        
+        {/* Menu Button for Mobile */}
+        <button onClick={toggleMenu} className="lg:hidden text-white text-3xl focus:outline-none z-50">
           {isOpen ? <FaTimes /> : <FaBars />}
         </button>
+        
+        {/* Navbar Links */}
         <ul
-          className={`lg:flex pl-5 lg:space-x-6 absolute lg:static top-16 right-0 w-full lg:w-auto bg-[#040404] lg:bg-transparent transition-transform duration-300 ease-in-out ${isOpen ? 'translate-x-0' : 'translate-x-full'} lg:translate-x-0`}
+          className={`lg:flex space-y-5 lg:space-y-0 lg:space-x-10 absolute lg:static top-20 right-0 w-full lg:w-auto bg-gray-900 lg:bg-transparent transition-all duration-500 ease-in-out transform ${isOpen ? 'translate-x-0' : 'translate-x-full'} lg:translate-x-0`}
         >
           {/* Mobile Links */}
-          <li className="lg:hidden text-center mb-4">
-            <Link to="/home" className="flex items-center hover:text-[#6CD123]" onClick={() => setIsOpen(false)}>
-              <FaHome className="mr-2" /> Home
-            </Link>
-          </li>
-          <li className="lg:hidden text-center mb-4">
-            <Link to="/service" className="flex items-center hover:text-[#6CD123]" onClick={() => setIsOpen(false)}>
-              <FaDumbbell className="mr-2" /> Services
-            </Link>
-          </li>
-          <li className="lg:hidden text-center mb-4">
-            <Link to="/sports" className="flex items-center hover:text-[#6CD123]" onClick={() => setIsOpen(false)}>
-              <FaUsers className="mr-2" /> Sports
-            </Link>
-          </li>
-          <li className="lg:hidden text-center mb-4">
-            <Link to="/membership" className="flex items-center hover:text-[#6CD123]" onClick={() => setIsOpen(false)}>
-              <MdCardMembership className="mr-2" /> Membership
-            </Link>
-          </li>
-          <li className="lg:hidden text-center mb-4">
-            <Link to="/contact" className="flex items-center hover:text-[#6CD123]" onClick={() => setIsOpen(false)}>
-              <FaEnvelope className="mr-2" /> Contact
-            </Link>
-          </li>
+          {[
+            { to: '/home', icon: <FaHome className="mr-2" />, text: 'Home' },
+            { to: '/about', icon: <MdInfo className="mr-2" />, text: 'About' },
+            { to: '/service', icon: <FaDumbbell className="mr-2" />, text: 'Services' },
+            { to: '/sports', icon: <FaFootballBall className="mr-2" />, text: 'Sports' },
+            { to: '/membership', icon: <MdCardMembership className="mr-2" />, text: 'Membership' },
+            { to: '/contact', icon: <FaEnvelope className="mr-2" />, text: 'Contact' },
+          ].map((link, index) => (
+            <li key={index} className="lg:hidden text-center mb-4 text-lg font-medium">
+              <Link to={link.to} className="flex items-center justify-center hover:text-green-400 transition-colors" onClick={() => setIsOpen(false)}>
+                {link.icon} {link.text}
+              </Link>
+            </li>
+          ))}
 
           {/* Desktop Links */}
-          <li className="hidden lg:flex items-center">
-            <Link to="/home" className="flex items-center hover:text-[#6CD123]">
-              <FaHome className="mr-2" /> Home
-            </Link>
-          </li>
-          <li className="hidden lg:flex items-center">
-            <Link to="/service" className="flex items-center hover:text-[#6CD123]">
-              <FaDumbbell className="mr-2" /> Services
-            </Link>
-          </li>
-          <li className="hidden lg:flex items-center">
-            <Link to="/sports" className="flex items-center hover:text-[#6CD123]">
-              <FaUsers className="mr-2" /> Sports
-            </Link>
-          </li>
-          <li className="hidden lg:flex items-center">
-            <Link to="/membership" className="flex items-center hover:text-[#6CD123]">
-              <MdCardMembership className="mr-2" /> Membership
-            </Link>
-          </li>
-          <li className="hidden lg:flex items-center">
-            <Link to="/contact" className="flex items-center hover:text-[#6CD123]">
-              <FaEnvelope className="mr-2" /> Contact
-            </Link>
-          </li>
+          {[
+            { to: '/home', icon: <FaHome className="mr-2" />, text: 'Home' },
+            { to: '/about', icon: <MdInfo className="mr-2" />, text: 'About' },
+            { to: '/service', icon: <FaDumbbell className="mr-2" />, text: 'Services' },
+            { to: '/sports', icon: <FaFootballBall className="mr-2" />, text: 'Sports' },
+            { to: '/membership', icon: <MdCardMembership className="mr-2" />, text: 'Membership' },
+            { to: '/contact', icon: <FaEnvelope className="mr-2" />, text: 'Contact' },
+          ].map((link, index) => (
+            <li key={index} className="hidden lg:flex items-center text-lg font-medium">
+              <Link to={link.to} className="flex items-center hover:text-green-400 transition-colors">
+                {link.icon} {link.text}
+              </Link>
+            </li>
+          ))}
         </ul>
       </nav>
     </motion.header>

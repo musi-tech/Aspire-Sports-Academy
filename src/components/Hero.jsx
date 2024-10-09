@@ -32,7 +32,7 @@ const Hero = () => {
   };
 
   return (
-    <section id="hero" className="relative w-full h-screen bg-black">
+    <section id="hero" className="relative w-full h-screen bg-black overflow-x-hidden">
       <div className="absolute inset-0 z-0">
         <Slider {...settings}>
           {galleryImages.map((image, index) => (

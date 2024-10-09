@@ -32,7 +32,7 @@ const Hero = () => {
   };
 
   return (
-    <section id="hero" className="relative w-full h-screen bg-black overflow-x-hidden">
+    <section id="hero" className="relative w-full h-screen overflow-hidden">
       <div className="absolute inset-0 z-0">
         <Slider {...settings}>
           {galleryImages.map((image, index) => (
@@ -50,28 +50,28 @@ const Hero = () => {
       {/* Overlay Content */}
       <div className="absolute inset-0 z-10 flex flex-col justify-center items-center text-center text-white">
         <motion.h1
-          initial={{ opacity: 0, y: -50 }}
+          initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1 }}
-          className="text-5xl md:text-7xl font-extrabold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-[#6CD123] to-[#B5FF4D]"
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          className="will-change-transform text-5xl md:text-7xl font-extrabold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-[#6CD123] via-[#A3FF84] to-[#E6FFE6]"
         >
           Welcome to Aspire Sports Club
         </motion.h1>
 
         <motion.p
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, delay: 0.3 }}
-          className="text-xl md:text-3xl mb-8 max-w-4xl mx-auto text-gray-300"
+          transition={{ duration: 0.8, ease: "easeOut", delay: 0.3 }}
+          className="will-change-transform text-xl md:text-3xl mb-8 max-w-4xl mx-auto text-gray-300"
         >
           Where Passion Meets Performance. Train with the Best, Play Like a Champion.
         </motion.p>
 
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, delay: 0.6 }}
-          className="flex space-x-4"
+          transition={{ duration: 0.8, ease: "easeOut", delay: 0.6 }}
+          className="will-change-transform flex space-x-4"
         >
           <a
             href="#services"

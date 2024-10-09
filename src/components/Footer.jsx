@@ -8,7 +8,7 @@ const Footer = () => {
       <div className="container mx-auto px-6 lg:px-20">
         {/* Footer Top: Logo and Social Media */}
         <div className="flex flex-col lg:flex-row justify-between items-center border-b border-[#3A3A3A] pb-6 mb-6">
-          <a href="/" className="text-3xl font-extrabold text-[#6CD123] tracking-widest mb-4 lg:mb-0">Aspire Sports Academy</a>
+          <a href="/" className="text-3xl font-extrabold text-[#6CD123] tracking-widest mb-4 lg:mb-0">Aspire Sports Club</a>
           
           <div className="flex space-x-6">
             <a href="https://www.facebook.com/profile.php?id=61563041397359&mibextid=ZbWKwL" className="text-3xl hover:text-[#6CD123] transition duration-300" aria-label="Facebook">

@@ -3,7 +3,6 @@ import React from 'react';
 import Header from '../components/Header';
 import AboutHero from '../components/AboutHero';
 import Footer from '../components/Footer';
-import Get from '../components/Get';
 import Introduction from '../components/Introduction';
 import WhyChooseUs from '../components/WhyChooseUs';
 import History from '../components/History';
@@ -22,7 +21,6 @@ function LandingPage() {
       <History />
       <OurMission /> 
       <OurVision />
-      <Get />
       <Footer />
     </div>
   );

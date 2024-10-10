@@ -3,11 +3,14 @@ import { motion } from 'framer-motion';
 import { FaEnvelope, FaPhoneAlt, FaWhatsapp } from 'react-icons/fa';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import Map from '../components/Map';
+
 
 const ContactForm = () => {
   return (
     <>
       <Header />
+      <Map />
       <section id="contact" className="py-16 bg-gradient-to-br from-[#121212] to-[#1F1F1F] text-center">
         <div className="container mx-auto px-6 md:px-12 py-16">
           {/* Heading */}

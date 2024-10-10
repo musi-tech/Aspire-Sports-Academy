@@ -3,6 +3,10 @@ import { motion } from 'framer-motion';
 import { FaTrophy, FaRunning, FaBasketballBall } from 'react-icons/fa';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import SportsServices from '../components/SportsServices';
+import Facilities from '../components/Facilities';
+
+
 const Services = () => {
   const services = [
     {
@@ -43,7 +47,7 @@ const Services = () => {
 
     <section id="services" className="py-16 bg-gradient-to-r from-[#040404] to-[#0A0A0A] text-[#D8DBD5]">
       <div className="container mx-auto px-4 py-16">
-        <h2 className="text-5xl font-extrabold text-center mb-16 text-transparent bg-clip-text bg-gradient-to-r from-[#6CD123] to-[#B5FF4D]">
+        <h2 className=" text-5xl font-extrabold text-center mb-16 text-transparent bg-clip-text bg-gradient-to-r from-[#6CD123] to-[#B5FF4D]">
           Our Services
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
@@ -76,6 +80,8 @@ const Services = () => {
         </div>
       </div>
     </section>
+    <SportsServices />
+    <Facilities />
           <Footer />
 </>
   );

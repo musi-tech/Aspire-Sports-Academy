@@ -10,6 +10,7 @@ import { PiBoxingGloveFill } from "react-icons/pi";
 import { RiPingPongFill } from "react-icons/ri";
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import Gallery from '../components/Gallery';
 
 const sports = [
   { name: 'Swimming', icon: <FaSwimmer />},
@@ -69,6 +70,7 @@ const SportsOffered = () => {
           <p className="text-center mt-16 text-gray-500 text-lg">--- Terms and conditions apply ---</p>
         </div>
       </section>
+      <Gallery />
       <Footer />
     </>
   );

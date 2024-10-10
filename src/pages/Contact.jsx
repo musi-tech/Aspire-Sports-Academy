@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FaEnvelope, FaPhoneAlt, FaWhatsapp } from 'react-icons/fa';
+import { FaEnvelope, FaPhoneAlt} from 'react-icons/fa';
+import { IoLogoWhatsapp } from 'react-icons/io';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Map from '../components/Map';
@@ -56,7 +57,7 @@ const ContactForm = () => {
 
               {/* WhatsApp */}
               <div className="flex flex-col items-center lg:items-start">
-                <FaWhatsapp className="text-5xl text-[#6cd123] mb-6" />
+                <IoLogoWhatsapp className="text-5xl text-[#6cd123] mb-6" />
                 <h3 className="text-3xl font-bold mb-4">WhatsApp Us</h3>
                 <a
                   href="https://wa.me/+919378404040"

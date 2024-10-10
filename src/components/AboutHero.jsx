@@ -1,58 +1,71 @@
-// components/Hero.js
+// components/AboutHero.js
 import React from 'react';
 import { motion } from 'framer-motion';
-import { MdArrowDownward } from 'react-icons/md';
 import { Link } from 'react-scroll';
-import heroImage from '../assets/hero1.jpg'; // Import the image
+import aboutImage from '../assets/C5.jpg'; // Replace with your about page image
 
-const Arrow = () => (
-  <motion.div
-    className="text-[#D8DBD5] text-4xl mt-6 mx-auto"
-    initial={{ opacity: 0, y: 0 }}
-    animate={{ opacity: 1, y: [0, -10, 0] }}
-    transition={{ duration: 1.5, repeat: Infinity, repeatType: 'loop' }}
-  >
-    <MdArrowDownward />
-  </motion.div>
-);
-
-const Hero = () => {
+const AboutHero = () => {
   return (
     <motion.section
-      id="home"
+      id="about"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 1 }}
-      className="bg-[#040404] text-[#D8DBD5] px-5 h-screen flex items-center justify-center flex-col bg-cover bg-center relative"
-      style={{ backgroundImage: `url(${heroImage})` }} // Use imported image here
+      className="bg-[#0A0A0A] text-white px-5 h-screen flex items-center justify-center flex-col bg-cover bg-center relative"
+      style={{ backgroundImage: `url(${aboutImage})` }}
     >
-      {/* Overlay for better text visibility */}
-      <div className="absolute inset-0 bg-black bg-opacity-50"></div>
-      
+      {/* Overlay for darkening the background image */}
+      <div className="absolute inset-0 bg-black bg-opacity-40"></div>
+
       <div className="relative text-center">
-      <h1 className="text-5xl font-bold mb-4">
-  Welcome to <span className="uppercase bg-clip-text text-transparent bg-gradient-to-r from-[#6CD123] to-[#38BDF8]">
-    Aspire Sports
-  </span>
-</h1>
-        <p className="text-2xl mb-8 text-gray-400">Reach New Heights</p>
+        <motion.h1
+          initial={{ opacity: 0, y: -50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1.2 }}
+          className="text-6xl font-extrabold mb-6 leading-tight"
+        >
+          About <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#6CD123] to-[#38BDF8]">Aspire Sports</span>
+        </motion.h1>
+        
+        <motion.p
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1.2, delay: 0.3 }}
+          className="text-xl mb-10 text-gray-300 max-w-3xl mx-auto"
+        >
+          We are committed to excellence in sports, helping athletes reach their peak potential. With world-class facilities, expert coaching, and a community built on passion, Aspire Sports is the place where champions are born.
+        </motion.p>
+
         <Link
-          to="services"
+          to="facilities"
           smooth={true}
           duration={500}
         >
           <motion.button
-            whileHover={{ scale: 1.05 }}
+            whileHover={{ scale: 1.08 }}
             whileTap={{ scale: 0.95 }}
-            className="bg-[#6CD123] text-[#040404] px-6 py-3 rounded-full text-lg font-semibold hover:bg-[#D8DBD5]"
+            className="bg-gradient-to-r from-[#6CD123] to-[#38BDF8] text-black px-8 py-3 rounded-full text-lg font-bold shadow-lg hover:shadow-2xl"
           >
-            Get Started
+            Discover Our Facilities
           </motion.button>
         </Link>
       </div>
-      <Arrow />
+
+      {/* Bottom arrow indicating scroll */}
+      <motion.div
+        className="text-[#6CD123] text-5xl mt-8 mx-auto absolute bottom-10"
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: [0, -10, 0] }}
+        transition={{ duration: 1.5, repeat: Infinity, repeatType: 'loop' }}
+      >
+        <Link to="facilities" smooth={true} duration={500}>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-10 h-10">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
+          </svg>
+        </Link>
+      </motion.div>
     </motion.section>
   );
 };
 
-export default Hero;
+export default AboutHero;

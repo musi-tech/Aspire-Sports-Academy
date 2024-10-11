@@ -10,6 +10,9 @@ import hero2 from '../assets/C2.jpg';
 import hero3 from '../assets/C3.jpg';
 import hero4 from '../assets/C4.jpg';
 
+// Import the Aspire logo
+import aspireLogo from '../assets/aspire_logo_hori.svg';
+
 const galleryImages = [
   hero1,
   hero2,
@@ -49,14 +52,14 @@ const Hero = () => {
       
       {/* Overlay Content */}
       <div className="absolute inset-0 z-10 flex flex-col justify-center items-center text-center text-white">
-        <motion.h1
+        <motion.img
+          src={aspireLogo}
+          alt="Aspire Sports Club Logo"
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          className="will-change-transform text-5xl md:text-7xl font-extrabold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-[#6CD123] via-[#A3FF84] to-[#E6FFE6]"
-        >
-          Welcome to Aspire Sports Club
-        </motion.h1>
+          className="w-72 md:w-96 mb-6"
+        />
 
         <motion.p
           initial={{ opacity: 0, y: 20 }}

@@ -46,7 +46,7 @@ const PrivacyPolicy = () => {
 
                 <section className="mb-8">
                     <h2 className="text-3xl font-semibold mb-4 text-gray-300">3. How We Use Your Information</h2>
-                    <ul className="list-disc pl-6 text-lg text-gray-300 space-y-2">
+                    <ul className="list-disc pl-6 text-lg text-gray-300 space-y-2">n
                         <li><strong>Providing Services:</strong> To deliver the services you request and manage your account.</li>
                         <li><strong>Communication:</strong> To respond to your inquiries, provide updates, and send promotional materials if you opt-in.</li>
                         <li><strong>Improvement:</strong> To analyze usage patterns and improve our Site and services.</li>

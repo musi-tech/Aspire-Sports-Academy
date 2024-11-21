@@ -5,8 +5,6 @@ const MembershipPlans = () => {
   const plans = [
     {
       title: "Individual Membership",
-      price: "₹55,000/-",
-      period: "Annually",
       details: [
         "1 Adult",
         "All access to the Sports Club",
@@ -15,8 +13,6 @@ const MembershipPlans = () => {
     },
     {
       title: "Couple Membership",
-      price: "₹75,000/-",
-      period: "Annually",
       details: [
         "2 Adults",
         "All access to the Sports Club",
@@ -25,8 +21,6 @@ const MembershipPlans = () => {
     },
     {
       title: "Family Club Membership",
-      price: "₹1,00,000/-",
-      period: "Annually",
       details: [
         "2 Adults + 2 kids (Below 13)",
         "All access to the Sports Club",

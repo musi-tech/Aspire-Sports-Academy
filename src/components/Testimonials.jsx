@@ -7,19 +7,16 @@ import 'swiper/css/pagination';
 
 const testimonials = [
   { 
-    name: 'John Doe', 
-    text: 'Sports Academy has transformed my fitness journey. Highly recommended!', 
-    image: 'https://placehold.co/400' 
+    name: 'Swapnil Deshmukh', 
+    text: 'Sports Academy has transformed my fitness journey. Highly recommended!' 
   },
   { 
-    name: 'Jane Smith', 
-    text: 'The coaching staff is top-notch. I improved in just a few months.', 
-    image: 'https://placehold.co/400' 
+    name: 'Tanishka Jadhav', 
+    text: 'The coaching staff is top-notch. I improved in just a few months.' 
   },
   { 
-    name: 'Mike Johnson', 
-    text: 'Great facilities and a welcoming community. It\'s more than just a gym!', 
-    image: 'https://placehold.co/400' 
+    name: 'Rohit kale', 
+    text: 'Great facilities and a welcoming community. It\'s more than just a gym!' 
   },
 ];
 
@@ -72,11 +69,22 @@ const Testimonials = () => {
                   transition={{ duration: 0.4 }}
                   className="absolute inset-0 bg-gradient-to-b from-transparent to-[#252525] opacity-30 z-0"
                 />
-                <img
-                  src={testimonial.image}
-                  alt={testimonial.name}
-                  className="w-28 h-28 rounded-full object-cover mb-6 z-10 transition-transform group-hover:scale-110 duration-500"
-                />
+                <div className="w-28 h-28 bg-[#444444] rounded-full flex items-center justify-center mb-6 z-10">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="w-14 h-14 text-[#6CD123]"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    strokeWidth={2}
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v1h16v-1c0-2.66-5.33-4-8-4z"
+                    />
+                  </svg>
+                </div>
                 <p className="mb-6 italic text-[#BBBBBB] text-lg z-10">
                   "{testimonial.text}"
                 </p>

@@ -1,6 +1,8 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FaTrophy, FaRunning, FaBasketballBall } from 'react-icons/fa';
+import { FaTrophy, FaRunning, FaBasketballBall, FaTractor } from 'react-icons/fa';
+
+
 
 const Services = () => {
   const services = [

@@ -68,8 +68,8 @@ const Navbar = () => {
 
         {/* Chat With Us Button */}
         <a
-          href="https://wa.me/9378404040"
-          className="hidden lg:inline-block bg-green-500 text-white py-2 px-4 rounded-full text-sm font-semibold shadow-lg hover:bg-green-400 transition-all"
+          href="https://drive.google.com/file/d/1NjfC5RDxMF1zdAIqfOtddKgKuQSOKL4x/view?usp=drive_link"
+          className="inline-block bg-[#6CD123] hover:bg-[#5BB61D] text-[#FFFFFF] px-8 py-3 mt-1 rounded-xl font-bold hover:scale-105 transition-transform duration-300"
           target="_blank"
           rel="noopener noreferrer"
         >

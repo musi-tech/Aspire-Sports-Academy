@@ -63,7 +63,7 @@ const ContactForm = () => {
                   href="https://wa.me/+919378404040"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-block bg-[#25D366] text-[#FFFFFF] px-8 py-3 mt-1 rounded-xl font-bold hover:bg-[#1EBB5A] hover:scale-105 transition-transform duration-300"
+                  className="inline-block bg-[#6CD123] hover:bg-[#5BB61D] text-[#FFFFFF] px-8 py-3 mt-1 rounded-xl font-bold hover:scale-105 transition-transform duration-300"
                 >
                   Chat Now
                 </a>

@@ -9,14 +9,20 @@ const AgencyStory = () => {
           <h2 className="text-5xl font-extrabold text-white mb-6">
             Aspire <span className="text-[#6CD123]">Story</span>
           </h2>
-          <p className="text-lg text-gray-400 mb-6">
-            Discover our journey, values, and commitment to excellence in sports.
-          </p>
+         
           <p className="text-base text-gray-300 mb-6 leading-relaxed">
-            At Aspire Sports, we believe in unlocking the potential of every athlete through exceptional coaching, state-of-the-art facilities, and an unyielding passion for sports. From our humble beginnings to becoming a premier destination for sports training, our story is one of growth, dedication, and success.
+          At Aspire Sports Club, we are dedicated to creating a space where families can come together, stay active, and build meaningful connections. Located in Pune, our club offers a wide range of sports and fitness activities for all ages and skill levels.
           </p>
           <p className="text-base text-gray-300 mb-8 leading-relaxed">
-            Our team of professional coaches and sports experts strives to nurture talent, cultivate sportsmanship, and drive athletes to achieve their personal best. We are more than just a club—we are a family united by the love of sports, empowering athletes to rise above challenges and reach new heights.
+          Our mission goes beyond just physical fitness. We provide holistic coaching that nurtures both mental and physical health, ensuring the overall well-being of every individual. Through our programs, we emphasize sportsmanship values, discipline, and resilience, helping members grow as athletes and as individuals.
+
+          </p>
+          <p className="text-base text-gray-300 mb-8 leading-relaxed">
+          With state-of-the-art facilities, certified coaches, and a supportive environment, we inspire a love for sports, develop athletes, and motivate a balanced, healthy lifestyle. Whether you’re here to learn, compete, or simply enjoy quality time, Aspire Sports Club is the perfect destination.
+          </p>
+
+          <p className="text-base text-gray-300 mb-8 leading-relaxed">
+          Join us to experience a community that celebrates growth, fosters champions, and builds a foundation for lifelong wellness.
           </p>
           <a
             href="/about"

@@ -1,13 +1,14 @@
-// components/Navbar.js
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { FaHome, FaDumbbell, FaEnvelope, FaBars, FaTimes, FaFootballBall } from 'react-icons/fa';
-import { MdCardMembership, MdInfo } from "react-icons/md";
+import { FaBars, FaTimes } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
+
 const logo = require('../assets/logo.svg').default;
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+
+  // Toggle the mobile menu
   const toggleMenu = () => setIsOpen(!isOpen);
 
   return (
@@ -15,53 +16,65 @@ const Navbar = () => {
       initial={{ opacity: 0, y: -50 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6, ease: "easeOut" }}
-      className="bg-gradient-to-r from-black via-gray-900 to-gray-800 text-white py-2 px-6 fixed w-full z-20 shadow-xl backdrop-blur-md"
+      className="bg-gradient-to-r from-black via-gray-900 to-gray-800 text-white py-2 px-6 fixed w-full z-20 shadow-xl backdrop-blur-lg"
     >
       <nav className="container mx-auto flex items-center justify-between">
         {/* Logo Section */}
-        <img src={logo} alt="logo" className="h-16 w-auto lg:h-24 cursor-pointer" />
-        
+        <Link to="/home">
+          <img
+            src={logo}
+            alt="logo"
+            className="h-16 w-auto lg:h-20 cursor-pointer transition-transform transform hover:scale-105"
+          />
+        </Link>
+
         {/* Menu Button for Mobile */}
-        <button onClick={toggleMenu} className="lg:hidden text-white text-3xl focus:outline-none z-50">
+        <button
+          onClick={toggleMenu}
+          className="lg:hidden text-white text-3xl focus:outline-none z-50"
+        >
           {isOpen ? <FaTimes /> : <FaBars />}
         </button>
-        
+
         {/* Navbar Links */}
         <ul
-          className={`lg:flex space-y-5 lg:space-y-0 lg:space-x-10 absolute lg:static top-20 right-0 w-full lg:w-auto bg-gray-900 lg:bg-transparent transition-all duration-500 ease-in-out transform ${isOpen ? 'translate-x-0' : 'translate-x-full'} lg:translate-x-0`}
+          className={`lg:flex space-y-5 lg:space-y-0 lg:space-x-8 absolute lg:static top-20 right-0 w-full lg:w-auto bg-gray-900 lg:bg-transparent transition-all duration-500 ease-in-out transform ${
+            isOpen ? 'translate-x-0' : 'translate-x-full'
+          } lg:translate-x-0`}
         >
-          {/* Mobile Links */}
           {[
-            { to: '/home', icon: <FaHome className="mr-2" />, text: 'Home' },
-            { to: '/about', icon: <MdInfo className="mr-2" />, text: 'About' },
-            { to: '/service', icon: <FaDumbbell className="mr-2" />, text: 'Services' },
-            { to: '/sports', icon: <FaFootballBall className="mr-2" />, text: 'Sports' },
-            { to: '/membership', icon: <MdCardMembership className="mr-2" />, text: 'Membership' },
-            { to: '/contact', icon: <FaEnvelope className="mr-2" />, text: 'Contact' },
+            { to: '/home', text: 'Home' },
+            { to: '/about', text: 'About Us' },
+            { to: '/sports', text: 'Event' },
+            { to: '/service', text: 'Coaching' },
+            { to: '/sports', text: 'Turf' },
+            { to: '/membership', text: 'Membership' },
+            { to: '/contact', text: 'Contact Us' },
           ].map((link, index) => (
-            <li key={index} className="lg:hidden text-center mb-4 text-lg font-medium">
-              <Link to={link.to} className="flex items-center justify-center hover:text-green-400 transition-colors" onClick={() => setIsOpen(false)}>
-                {link.icon} {link.text}
-              </Link>
-            </li>
-          ))}
-
-          {/* Desktop Links */}
-          {[
-            { to: '/home', icon: <FaHome className="mr-2" />, text: 'Home' },
-            { to: '/about', icon: <MdInfo className="mr-2" />, text: 'About' },
-            { to: '/service', icon: <FaDumbbell className="mr-2" />, text: 'Services' },
-            { to: '/sports', icon: <FaFootballBall className="mr-2" />, text: 'Sports' },
-            { to: '/membership', icon: <MdCardMembership className="mr-2" />, text: 'Membership' },
-            { to: '/contact', icon: <FaEnvelope className="mr-2" />, text: 'Contact' },
-          ].map((link, index) => (
-            <li key={index} className="hidden lg:flex items-center text-lg font-medium">
-              <Link to={link.to} className="flex items-center hover:text-green-400 transition-colors">
-                {link.icon} {link.text}
+            <li
+              key={index}
+              className="text-center text-lg font-medium transition-colors"
+            >
+              <Link
+                to={link.to}
+                className="flex items-center justify-center lg:justify-start hover:text-green-400"
+                onClick={() => setIsOpen(false)}
+              >
+                {link.text}
               </Link>
             </li>
           ))}
         </ul>
+
+        {/* Chat With Us Button */}
+        <a
+          href="https://wa.me/9378404040"
+          className="hidden lg:inline-block bg-green-500 text-white py-2 px-4 rounded-full text-sm font-semibold shadow-lg hover:bg-green-400 transition-all"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Download Brochure
+        </a>
       </nav>
     </motion.header>
   );

@@ -5,7 +5,6 @@ import AboutHero from '../components/AboutHero';
 import Footer from '../components/Footer';
 import Introduction from '../components/Introduction';
 import WhyChooseUs from '../components/WhyChooseUs';
-import History from '../components/History';
 import OurMission from '../components/OurMission';
 import OurVision from '../components/OurVision';
 
@@ -18,7 +17,6 @@ function LandingPage() {
       <AboutHero />
       <Introduction />
       <WhyChooseUs />
-      <History />
       <OurMission /> 
       <OurVision />
       <Footer />

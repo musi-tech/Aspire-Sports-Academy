@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FaMedal, FaUsers, FaDumbbell, FaRunning } from 'react-icons/fa';
+import { FaUserGraduate, FaHandshake, FaVolleyballBall, FaBrain } from 'react-icons/fa';
 
 const WhyChooseUs = () => {
   return (
@@ -21,13 +21,13 @@ const WhyChooseUs = () => {
           className="bg-gradient-to-r from-[#1F1F1F] to-[#333333] p-8 rounded-lg shadow-lg hover:bg-gray-800 transition duration-300"
         >
           <div className="flex justify-center mb-4">
-            <FaMedal className="text-6xl text-[#6CD123]" />
+            <FaUserGraduate className="text-6xl text-[#6CD123]" />
           </div>
           <h3 className="text-xl font-bold text-white text-center mb-2">
-            Award-Winning Coaches
+            Certified Coaches
           </h3>
           <p className="text-gray-400 text-center">
-            Our coaches are experienced professionals with national and international accolades.
+            Our coaches are certified professionals, ensuring top-tier guidance and expertise for all athletes.
           </p>
         </motion.div>
 
@@ -37,7 +37,7 @@ const WhyChooseUs = () => {
           className="bg-gradient-to-r from-[#1F1F1F] to-[#333333] p-8 rounded-lg shadow-lg hover:bg-gray-800 transition duration-300"
         >
           <div className="flex justify-center mb-4">
-            <FaUsers className="text-6xl text-[#6CD123]" />
+            <FaHandshake className="text-6xl text-[#6CD123]" />
           </div>
           <h3 className="text-xl font-bold text-white text-center mb-2">
             Community Spirit
@@ -53,13 +53,13 @@ const WhyChooseUs = () => {
           className="bg-gradient-to-r from-[#1F1F1F] to-[#333333] p-8 rounded-lg shadow-lg hover:bg-gray-800 transition duration-300"
         >
           <div className="flex justify-center mb-4">
-            <FaDumbbell className="text-6xl text-[#6CD123]" />
+            <FaVolleyballBall className="text-6xl text-[#6CD123]" />
           </div>
           <h3 className="text-xl font-bold text-white text-center mb-2">
-            State-of-the-Art Facilities
+            Multisport Facilities
           </h3>
           <p className="text-gray-400 text-center">
-            Our world-class facilities are designed to enhance athletic performance and fitness.
+            Our facilities cater to a variety of sports, offering versatility and support for athletic growth and fitness.
           </p>
         </motion.div>
 
@@ -69,7 +69,7 @@ const WhyChooseUs = () => {
           className="bg-gradient-to-r from-[#1F1F1F] to-[#333333] p-8 rounded-lg shadow-lg hover:bg-gray-800 transition duration-300"
         >
           <div className="flex justify-center mb-4">
-            <FaRunning className="text-6xl text-[#6CD123]" />
+            <FaBrain className="text-6xl text-[#6CD123]" />
           </div>
           <h3 className="text-xl font-bold text-white text-center mb-2">
             Holistic Development

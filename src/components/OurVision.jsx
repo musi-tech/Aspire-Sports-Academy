@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaTrophy, FaUsers, FaLightbulb } from 'react-icons/fa';
+import { FaRunning, FaMedal, FaUsers } from 'react-icons/fa';
 
 const OurVision = () => {
   return (
@@ -17,33 +17,33 @@ const OurVision = () => {
         {/* Vision Block 1 */}
         <div className="flex flex-col items-center text-center bg-gradient-to-r from-[#1F1F1F] to-[#333333] rounded-lg p-8 shadow-lg hover:shadow-2xl transition duration-300">
           <div className="bg-[#6CD123] text-white rounded-full p-6 mb-6">
-            <FaTrophy className="text-3xl" />
+            <FaRunning className="text-3xl" />
           </div>
-          <h3 className="text-2xl font-semibold text-white mb-4">Creating Champions</h3>
+          <h3 className="text-2xl font-semibold text-white mb-4">Reviving Traditional Play</h3>
           <p className="text-lg text-gray-400">
-            Our vision is to build a legacy of champions who set benchmarks of excellence in every arena.
+            Replacing virtual distractions with the thrill of real-life games, ensuring the next generation rediscovers the essence of outdoor play and healthy competition.
           </p>
         </div>
 
         {/* Vision Block 2 */}
         <div className="flex flex-col items-center text-center bg-gradient-to-r from-[#1F1F1F] to-[#333333] rounded-lg p-8 shadow-lg hover:shadow-2xl transition duration-300">
           <div className="bg-[#6CD123] text-white rounded-full p-6 mb-6">
-            <FaUsers className="text-3xl" />
+            <FaMedal className="text-3xl" />
           </div>
-          <h3 className="text-2xl font-semibold text-white mb-4">Inclusive Sports Community</h3>
+          <h3 className="text-2xl font-semibold text-white mb-4">Building a Culture of Excellence</h3>
           <p className="text-lg text-gray-400">
-            Aspire Sports Club envisions a thriving community where every individual, regardless of background, can engage in sports and grow.
+            Encouraging families to adopt sports and fitness as a lifestyle, fostering champions both on and off the field.
           </p>
         </div>
 
         {/* Vision Block 3 */}
         <div className="flex flex-col items-center text-center bg-gradient-to-r from-[#1F1F1F] to-[#333333] rounded-lg p-8 shadow-lg hover:shadow-2xl transition duration-300">
           <div className="bg-[#6CD123] text-white rounded-full p-6 mb-6">
-            <FaLightbulb className="text-3xl" />
+            <FaUsers className="text-3xl" />
           </div>
-          <h3 className="text-2xl font-semibold text-white mb-4">Innovating Sports Training</h3>
+          <h3 className="text-2xl font-semibold text-white mb-4">Family-Centered Sports Culture</h3>
           <p className="text-lg text-gray-400">
-            We aim to revolutionize the way athletes train and develop by incorporating cutting-edge technology and innovative methods.
+            Encouraging families to participate in sports together, creating moments of connection, teamwork, and shared joy.
           </p>
         </div>
       </div>

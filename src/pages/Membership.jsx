@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Testimonials from '../components/Testimonials';
+import OurPartner from '../components/OurPartner';
 
 
 const MembershipPlans = () => {
@@ -82,6 +83,7 @@ const MembershipPlans = () => {
         </div>
       </div>
     </section>
+    <OurPartner />
     <Testimonials />
     <Footer />
     </>

@@ -45,9 +45,8 @@ const Navbar = () => {
           {[
             { to: '/home', text: 'Home' },
             { to: '/about', text: 'About Us' },
-            { to: '/sports', text: 'Event' },
-            { to: '/service', text: 'Coaching' },
-            { to: '/sports', text: 'Turf' },
+            { to: '/sports', text: 'Sports' },
+            { to: '/service', text: 'Services' },
             { to: '/membership', text: 'Membership' },
             { to: '/contact', text: 'Contact Us' },
           ].map((link, index) => (

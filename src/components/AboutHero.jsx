@@ -2,7 +2,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-scroll';
-import aboutImage from '../assets/C5.jpg'; // Replace with your about page image
+import aboutImage from '../assets/C5.webp'; // Replace with your about page image
 
 const AboutHero = () => {
   return (

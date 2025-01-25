@@ -67,7 +67,7 @@ const Navbar = () => {
 
         {/* Chat With Us Button */}
         <a
-  href="https://www.dropbox.com/preview/Aspire.pdf?context=file_uploader_preview_file&role=personal" // Ensure the file is in the correct location (public/assets)
+  href="https://drive.google.com/file/d/1NjfC5RDxMF1zdAIqfOtddKgKuQSOKL4x/view?usp=sharing" // Ensure the file is in the correct location (public/assets)
   className="inline-block bg-[#6CD123] hover:bg-[#5BB61D] text-white px-8 py-3 mt-1 rounded-xl font-bold hover:scale-105 transition-transform duration-300"
   target="_blank"
   rel="noopener noreferrer"

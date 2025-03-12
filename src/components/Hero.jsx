@@ -8,7 +8,11 @@ import "slick-carousel/slick/slick-theme.css";
 import hero1 from '../assets/C1.jpg';
 import hero2 from '../assets/C2.jpg';
 import hero3 from '../assets/C3.jpg';
-import hero4 from '../assets/C4.jpg';
+import hero4 from '../assets/new11.JPG';
+import hero5 from '../assets/new12.JPG';
+import hero6 from '../assets/new13.JPG';
+import hero7 from '../assets/new14.JPG';
+
 
 // Import the Aspire logo
 import aspireLogo from '../assets/aspire_logo_hori.svg';
@@ -18,6 +22,9 @@ const galleryImages = [
   hero2,
   hero3,
   hero4,
+  hero5,
+  hero6,
+  hero7,
 ];
 
 const Hero = () => {

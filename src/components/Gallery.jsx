@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-import { motion } from "framer-motion";
-import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
+import { motion, AnimatePresence } from "framer-motion";
+import { FaChevronLeft, FaChevronRight, FaExpand } from "react-icons/fa";
 
 // Import images directly
 import hero1 from "../assets/new12.JPG";
@@ -17,97 +17,235 @@ import hero11 from "../assets/new13.JPG";
 import hero12 from "../assets/new14.JPG";
 
 const galleryImages = [
-  hero1,
-  hero2,
-  hero3,
-  hero4,
-  hero5,
-  hero6,
-  hero7,
-  hero8,
-  hero9,
-  hero10,
-  hero11,
-  hero12,
+  hero1, hero2, hero3, hero4, hero5, hero6, 
+  hero7, hero8, hero9, hero10, hero11, hero12
 ];
 
 const SportsGalleryCarousel = () => {
-  const [index, setIndex] = useState(0);
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [isAutoPlaying, setIsAutoPlaying] = useState(true);
+  const [lightboxOpen, setLightboxOpen] = useState(false);
+  const [touchStart, setTouchStart] = useState(0);
 
+  // Auto-play effect
   useEffect(() => {
-    const interval = setInterval(() => {
-      setIndex((prevIndex) => (prevIndex + 1) % galleryImages.length);
-    }, 3000); // Auto-slide every 3 seconds
-
+    let interval;
+    if (isAutoPlaying && !lightboxOpen) {
+      interval = setInterval(() => {
+        setCurrentIndex((prevIndex) => (prevIndex + 1) % galleryImages.length);
+      }, 4000);
+    }
     return () => clearInterval(interval);
-  }, []);
+  }, [isAutoPlaying, lightboxOpen]);
 
-  const prevSlide = () => {
-    setIndex((prevIndex) =>
+  // Navigation functions
+  const goToPrevious = () => {
+    setCurrentIndex((prevIndex) => 
       prevIndex === 0 ? galleryImages.length - 1 : prevIndex - 1
     );
+    setIsAutoPlaying(false);
+    setTimeout(() => setIsAutoPlaying(true), 8000);
   };
 
-  const nextSlide = () => {
-    setIndex((prevIndex) => (prevIndex + 1) % galleryImages.length);
+  const goToNext = () => {
+    setCurrentIndex((prevIndex) => 
+      (prevIndex + 1) % galleryImages.length
+    );
+    setIsAutoPlaying(false);
+    setTimeout(() => setIsAutoPlaying(true), 8000);
+  };
+
+  const goToSlide = (index) => {
+    setCurrentIndex(index);
+    setIsAutoPlaying(false);
+    setTimeout(() => setIsAutoPlaying(true), 8000);
+  };
+
+  // Touch handlers for mobile swiping
+  const handleTouchStart = (e) => {
+    setTouchStart(e.touches[0].clientX);
+  };
+
+  const handleTouchEnd = (e) => {
+    const touchEnd = e.changedTouches[0].clientX;
+    const difference = touchStart - touchEnd;
+    
+    if (difference > 50) {
+      goToNext();
+    } else if (difference < -50) {
+      goToPrevious();
+    }
+  };
+
+  // Lightbox toggle
+  const toggleLightbox = () => {
+    setLightboxOpen(!lightboxOpen);
+    setIsAutoPlaying(!lightboxOpen ? false : true);
   };
 
   return (
-    <section className="py-16 bg-gradient-to-br from-[#121212] to-[#1F1F1F] text-center">
-      <div className="container mx-auto px-6 md:px-12 relative">
-        {/* Title */}
-        <motion.h2
-          initial={{ opacity: 0, y: -50 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          className="text-5xl font-extrabold mb-12 text-transparent bg-clip-text bg-gradient-to-r from-[#6CD123] to-[#B5FF4D]"
-        >
-          Our Sports Gallery
-        </motion.h2>
+    <section className="py-20 bg-black text-white relative overflow-hidden">
+      {/* Background elements */}
+      <div className="absolute inset-0 pointer-events-none">
+        <div className="absolute top-0 left-0 w-full h-64 bg-gradient-to-b from-black to-transparent"></div>
+        <div className="absolute bottom-0 left-0 w-full h-64 bg-gradient-to-t from-black to-transparent"></div>
+      </div>
 
-        {/* Carousel Container */}
-        <div className="relative overflow-hidden w-full max-w-4xl mx-auto">
+      <div className="container mx-auto px-4 relative z-10">
+        {/* Title with decorative elements */}
+        <div className="text-center mb-10">
           <motion.div
-            className="flex items-center justify-center w-full"
-            initial={{ opacity: 0, x: 50 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6 }}
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
           >
-            <img
-              src={galleryImages[index]}
-              alt={`Sport ${index + 1}`}
-              className="w-full h-[400px] object-cover rounded-lg shadow-lg transition-opacity duration-300"
-            />
+            <span className="text-green-500 uppercase tracking-wider text-sm font-medium">Explore Our</span>
+            <h2 className="text-5xl font-bold mt-2 mb-4">Sports <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#6CD123] to-[#B5FF4D]">Gallery</span></h2>
+            <div className="w-20 h-1 bg-green-500 mx-auto"></div>
           </motion.div>
-
-          {/* Navigation Buttons */}
-          <button
-            onClick={prevSlide}
-            className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-black/50 p-3 rounded-full text-white hover:bg-black/80 transition"
-          >
-            <FaChevronLeft size={24} />
-          </button>
-          <button
-            onClick={nextSlide}
-            className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-black/50 p-3 rounded-full text-white hover:bg-black/80 transition"
-          >
-            <FaChevronRight size={24} />
-          </button>
         </div>
 
-        {/* Dots Navigation */}
-        <div className="flex justify-center mt-6">
-          {galleryImages.map((_, i) => (
-            <div
-              key={i}
-              onClick={() => setIndex(i)}
-              className={`w-3 h-3 mx-1 rounded-full cursor-pointer ${
-                i === index ? "bg-green-400 scale-125" : "bg-gray-500"
-              }`}
-            />
-          ))}
+        {/* Main carousel container */}
+        <div className="max-w-5xl mx-auto">
+          {/* Image showcase */}
+          <div 
+            className="relative rounded-xl overflow-hidden shadow-2xl shadow-green-500/10 bg-gray-900 aspect-video"
+            onTouchStart={handleTouchStart}
+            onTouchEnd={handleTouchEnd}
+          >
+            {/* Progress bar */}
+            {isAutoPlaying && (
+              <motion.div 
+                className="absolute top-0 left-0 h-1 bg-green-400 z-20"
+                initial={{ width: 0 }}
+                animate={{ width: "100%" }}
+                transition={{ duration: 4, ease: "linear", repeat: isAutoPlaying ? Infinity : 0 }}
+              />
+            )}
+            
+            {/* Main image with animation */}
+            <AnimatePresence mode="wait">
+              <motion.div
+                key={currentIndex}
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                transition={{ duration: 0.5 }}
+                className="w-full h-full"
+              >
+                <img
+                  src={galleryImages[currentIndex]}
+                  alt={`Sports Gallery ${currentIndex + 1}`}
+                  className="w-full h-full object-cover"
+                />
+              </motion.div>
+            </AnimatePresence>
+
+            {/* Fullscreen button */}
+            <button
+              onClick={toggleLightbox}
+              className="absolute top-4 right-4 bg-black/60 p-2 rounded-full hover:bg-green-500 transition-colors duration-300 text-white z-20"
+            >
+              <FaExpand />
+            </button>
+
+            {/* Navigation arrows */}
+            <div className="absolute inset-0 flex items-center justify-between px-4">
+              <button
+                onClick={goToPrevious}
+                className="bg-black/40 hover:bg-green-500 w-12 h-12 rounded-full flex items-center justify-center transition-colors duration-300 transform hover:scale-110"
+              >
+                <FaChevronLeft className="text-white" />
+              </button>
+              
+              <button
+                onClick={goToNext}
+                className="bg-black/40 hover:bg-green-500 w-12 h-12 rounded-full flex items-center justify-center transition-colors duration-300 transform hover:scale-110"
+              >
+                <FaChevronRight className="text-white" />
+              </button>
+            </div>
+
+            {/* Image counter overlay */}
+            <div className="absolute bottom-4 right-4 bg-black/60 px-3 py-1 rounded-full text-sm">
+              {currentIndex + 1}/{galleryImages.length}
+            </div>
+          </div>
+
+          {/* Thumbnail strip */}
+          <div className="mt-6 overflow-hidden">
+            <div className="flex justify-center space-x-2 py-2 overflow-x-auto">
+              {galleryImages.map((image, index) => (
+                <div
+                  key={index}
+                  onClick={() => goToSlide(index)}
+                  className={`relative cursor-pointer transition-all duration-300 ${
+                    currentIndex === index ? 'scale-110 z-10' : 'opacity-60 hover:opacity-100'
+                  }`}
+                >
+                  <img
+                    src={image}
+                    alt={`Thumbnail ${index + 1}`}
+                    className={`h-16 w-24 object-cover rounded-md ${
+                      currentIndex === index ? 'ring-2 ring-green-400' : ''
+                    }`}
+                  />
+                  {currentIndex === index && (
+                    <motion.div 
+                      layoutId="activeIndicator"
+                      className="absolute -bottom-1 left-0 right-0 h-1 bg-green-400 rounded-full"
+                    />
+                  )}
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
       </div>
+
+      {/* Fullscreen lightbox */}
+      {lightboxOpen && (
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          className="fixed inset-0 bg-black/95 z-50 flex items-center justify-center p-4"
+          onClick={toggleLightbox}
+        >
+          <div 
+            className="relative max-w-6xl max-h-screen" 
+            onClick={(e) => e.stopPropagation()}
+          >
+            <img
+              src={galleryImages[currentIndex]}
+              alt={`Fullscreen ${currentIndex + 1}`}
+              className="max-w-full max-h-[90vh] object-contain"
+            />
+            
+            <button
+              onClick={toggleLightbox}
+              className="absolute top-4 right-4 bg-black/60 p-3 rounded-full hover:bg-red-500 text-white"
+            >
+              ✕
+            </button>
+            
+            <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-4">
+              <button
+                onClick={goToPrevious}
+                className="bg-black/60 hover:bg-green-500 p-3 rounded-full text-white"
+              >
+                <FaChevronLeft size={24} />
+              </button>
+              <button
+                onClick={goToNext}
+                className="bg-black/60 hover:bg-green-500 p-3 rounded-full text-white"
+              >
+                <FaChevronRight size={24} />
+              </button>
+            </div>
+          </div>
+        </motion.div>
+      )}
     </section>
   );
 };

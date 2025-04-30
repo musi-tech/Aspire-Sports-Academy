@@ -2,6 +2,7 @@
 import React from 'react';
 import Header from '../components/Header';
 import Hero from '../components/Hero';
+import NotificationCenter from '../components/NotificationCenter';
 import Services from '../components/Services';
 import SportsOffered from '../components/SportsOffered';
 import MembershipPlans from '../components/MembershipPlans';
@@ -15,6 +16,7 @@ function LandingPage() {
     <div className="font-sans bg-[#D8DBD5]">
       <Header />
       <Hero />
+      <NotificationCenter />
       <Services />
       <SportsOffered />
       <MembershipPlans/>

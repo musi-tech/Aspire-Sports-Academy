@@ -35,7 +35,7 @@ const AgencyStory = () => {
         {/* Image Section */}
         <div className="flex justify-center items-center">
           <img
-            src={require('../assets/C8.jpg')}
+            src={require('../assets/C8.webp')}
             alt="Aspire Sports Academy"
             className="rounded-lg shadow-2xl transform hover:scale-105 transition duration-500"
           />

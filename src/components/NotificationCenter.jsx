@@ -3,10 +3,8 @@ import { Bell, X, CheckCircle, AlertCircle, Info, AlertTriangle, ChevronUp, Chev
 
 // Demo notifications for testing
 const initialNotifications = [
-  { id: 1, type: 'success', message: 'Project successfully saved', time: '2 min ago' },
-  { id: 2, type: 'error', message: 'Failed to upload image', time: '5 min ago' },
-  { id: 3, type: 'info', message: 'New update available', time: '10 min ago' },
-  { id: 4, type: 'warning', message: 'Your subscription expires soon', time: '1 hour ago' },
+  { id: 1, type: 'success', message: 'Attention Badminton Lovers, The court came alive today as we kicked off training with Padukone School of badminton at Aspire Sports Club!', time: '2 min ago' },
+ 
 ];
 
 // Add CSS for animations

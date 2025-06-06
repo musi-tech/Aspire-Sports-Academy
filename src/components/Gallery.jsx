@@ -3,18 +3,18 @@ import { motion, AnimatePresence } from "framer-motion";
 import { FaChevronLeft, FaChevronRight, FaExpand } from "react-icons/fa";
 
 // Import images directly
-import hero1 from "../assets/new12.JPG";
-import hero2 from "../assets/G2.jpg";
-import hero3 from "../assets/new11.JPG";
-import hero4 from "../assets/G4.jpg";
-import hero5 from "../assets/G5.jpg";
-import hero6 from "../assets/G6.jpg";
-import hero7 from "../assets/G7.jpg";
-import hero8 from "../assets/G8.jpg";
-import hero9 from "../assets/G9.jpg";
-import hero10 from "../assets/G10.jpg";
-import hero11 from "../assets/new13.JPG";
-import hero12 from "../assets/new14.JPG";
+import hero1 from "../assets/new12.webp";
+import hero2 from "../assets/G2.webp";
+import hero3 from "../assets/new11.webp";
+import hero4 from "../assets/G4.webp";
+import hero5 from "../assets/G5.webp";
+import hero6 from "../assets/G6.webp";
+import hero7 from "../assets/G7.webp";
+import hero8 from "../assets/G8.webp";
+import hero9 from "../assets/G9.webp";
+import hero10 from "../assets/G10.webp";
+import hero11 from "../assets/new13.webp";
+import hero12 from "../assets/new14.webp";
 
 const galleryImages = [
   hero1, hero2, hero3, hero4, hero5, hero6, 

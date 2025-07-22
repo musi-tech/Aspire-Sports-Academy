@@ -100,9 +100,8 @@ const PrivacyPolicy = () => {
                         If you have any questions or concerns about this Privacy Policy or our data practices, please contact us at:
                     </p>
                     <ul className="list-none pl-0 text-lg text-gray-300">
-                        <li>Email: <a href="mailto:info@aspire-sports.com" className="text-green-700 hover:underline">info@aspire-sports.com</a></li>
-                        <li>Phone: <a href="tel:+919579455256" className="text-green-700 hover:underline">+91 9579455525</a></li>
-                        <li>Address: [Insert Physical Address, if applicable]</li>
+                        <li>Email: <a href="mailto:contact@aspiresportsclub.com" className="text-green-700 hover:underline">contact@aspiresportsclub.com</a></li>
+                        <li>Phone: <a href="tel:+918956585865" className="text-green-700 hover:underline">+91 8956585865</a></li>
                     </ul>
                 </section>
 

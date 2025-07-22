@@ -112,9 +112,9 @@ const TermsOfService = () => {
             For any questions or concerns regarding these Terms, please contact us at:
           </p>
           <ul className="list-none pl-0 text-lg">
-            <li>Email: <a href="mailto:info@aspiresportsclub.in" className="text-green-700 hover:underline">info@aspiresportsclub.in</a></li>
-            <li>Phone: <a href="tel:+917559344845" className="text-green-700 hover:underline">+91 7559344845</a></li>
-            <li>WhatsApp: <a href="https://wa.me/917559344845" className="text-green-700 hover:underline" target="_blank" rel="noopener noreferrer">Chat with us</a></li>
+            <li>Email: <a href="mailto:contact@aspiresportsclub.com" className="text-green-700 hover:underline">contact@aspiresportsclub.com</a></li>
+            <li>Phone: <a href="tel:+918956585865" className="text-green-700 hover:underline">+91 8956585865</a></li>
+            <li>WhatsApp: <a href="https://wa.me/918956585865" className="text-green-700 hover:underline" target="_blank" rel="noopener noreferrer">Chat with us</a></li>
           </ul>
         </section>
 

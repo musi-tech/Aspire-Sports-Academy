@@ -45,7 +45,7 @@ const ContactForm = () => {
                 <FaPhoneAlt className="text-5xl text-[#6cd123] mb-6" />
                 <h3 className="text-3xl font-bold mb-4">Call Us</h3>
                 <p className="text-lg text-[#CCCCCC] hover:text-[#6cd123] transition-colors duration-300">
-                  +91 9378404040
+                  +91 8956585865
                 </p>
               </div>
 
@@ -54,7 +54,7 @@ const ContactForm = () => {
                 <IoLogoWhatsapp className="text-5xl text-[#6cd123] mb-6" />
                 <h3 className="text-3xl font-bold mb-4">WhatsApp Us</h3>
                 <a
-                  href="https://wa.me/+919378404040"
+                  href="https://wa.me/+918956585865"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-block bg-[#6CD123] hover:bg-[#5BB61D] text-[#FFFFFF] px-8 py-3 mt-1 rounded-xl font-bold hover:scale-105 transition-transform duration-300"

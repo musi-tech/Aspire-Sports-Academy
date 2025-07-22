@@ -1,78 +1,36 @@
 import React from 'react';
+import { Mail, Phone } from 'lucide-react';
+import { motion } from 'framer-motion';
 
 const ContactUs = () => {
   return (
     <section className="bg-black py-12 px-6 sm:px-10 lg:px-20">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 py-20">
         {/* Right Side - Contact Form (Show First on Small Screens) */}
-        <div className="order-1 md:order-1 bg-gradient-to-r from-[#1F1F1F] to-[#333333] p-8 rounded-lg shadow-lg py-20">
-          <h2 className="text-5xl text-center font-extrabold text-white mb-4">
-            Contact <span className="text-[#6CD123]">Us</span>
-          </h2>
-          <form>
-            {/* Name Input */}
-            <div className="mb-4">
-              <label className="block text-gray-400 text-sm mb-2" htmlFor="name">
-                Name
-              </label>
-              <input
-                type="text"
-                id="name"
-                className="w-full px-4 py-2 bg-gray-900 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-[#6CD123] focus:border-transparent"
-                placeholder="Your Name"
-              />
+         <motion.div
+          initial={{ opacity: 0, x: 50 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8 }}
+          className="order-1 md:order-2 bg-[#1A1A1A] rounded-lg shadow-lg p-10 flex flex-col justify-center items-center space-y-10"
+        >
+          <div className="text-center">
+            <div className="flex justify-center items-center mb-4">
+              <Mail className="w-8 h-8 text-[#6CD123]" />
             </div>
+            <h3 className="text-2xl text-white font-semibold mb-2">Email Us</h3>
+            <p className="text-gray-300 text-lg">contact@aspiresportsclub.com</p>
+          </div>
 
-            {/* Email Input */}
-            <div className="mb-4">
-              <label className="block text-gray-400 text-sm mb-2" htmlFor="email">
-                Email
-              </label>
-              <input
-                type="email"
-                id="email"
-                className="w-full px-4 py-2 bg-gray-900 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-[#6CD123] focus:border-transparent"
-                placeholder="Your Email"
-              />
+          <div className="w-2/3 border-t border-gray-700"></div>
+
+          <div className="text-center">
+            <div className="flex justify-center items-center mb-4">
+              <Phone className="w-8 h-8 text-[#6CD123]" />
             </div>
-
-            {/* Subject Input */}
-            <div className="mb-4">
-              <label className="block text-gray-400 text-sm mb-2" htmlFor="subject">
-                Subject
-              </label>
-              <input
-                type="text"
-                id="subject"
-                className="w-full px-4 py-2 bg-gray-900 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-[#6CD123] focus:border-transparent"
-                placeholder="Subject"
-              />
-            </div>
-
-            {/* Message Textarea */}
-            <div className="mb-6">
-              <label className="block text-gray-400 text-sm mb-2" htmlFor="message">
-                Write Something
-              </label>
-              <textarea
-                id="message"
-                className="w-full h-32 px-4 py-2 bg-gray-900 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-[#6CD123] focus:border-transparent"
-                placeholder="Your Message"
-              ></textarea>
-            </div>
-
-            {/* Submit Button */}
-            <div className="text-center">
-              <button
-                type="submit"
-                className="bg-gradient-to-r from-[#6CD123] to-[#32CD32] text-black font-bold py-2 px-6 rounded-full hover:shadow-lg transition duration-300"
-              >
-                Send Message
-              </button>
-            </div>
-          </form>
-        </div>
-
+            <h3 className="text-2xl text-white font-semibold mb-2">Call Us</h3>
+            <p className="text-gray-300 text-lg">+91 8956585865</p>
+          </div>
+        </motion.div>
         {/* Left Side - Google Map (Show Second on Small Screens) */}
         <div className="order-2 md:order-2 w-full h-[300px] md:h-full">
           <iframe

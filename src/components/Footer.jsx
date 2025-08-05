@@ -14,14 +14,8 @@ const Footer = () => {
             <a href="https://www.facebook.com/profile.php?id=61563041397359&mibextid=ZbWKwL" className="text-3xl hover:text-[#6CD123] transition duration-300" aria-label="Facebook">
               <FaFacebook />
             </a>
-            <a href="#" className="text-3xl hover:text-[#6CD123] transition duration-300" aria-label="Twitter">
-              <FaXTwitter />
-            </a>
             <a href="https://www.instagram.com/aspiresportsclub?igsh=NzJtajJmMDYxZTFo" className="text-3xl hover:text-[#6CD123] transition duration-300" aria-label="Instagram">
               <FaInstagram />
-            </a>
-            <a href="#" className="text-3xl hover:text-[#6CD123] transition duration-300" aria-label="LinkedIn">
-              <FaLinkedin />
             </a>
           </div>
         </div>

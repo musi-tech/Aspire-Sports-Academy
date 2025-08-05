@@ -11,10 +11,11 @@ import hero4 from '../assets/new11.webp';
 import hero5 from '../assets/new12.webp';
 import hero6 from '../assets/new13.webp';
 import hero7 from '../assets/new14.webp';
+import hero8 from '../assets/hp11.webp';
 
 import aspireLogo from '../assets/aspire_logo_hori.svg';
 
-const galleryImages = [hero1, hero2, hero3, hero4, hero5, hero6, hero7];
+const galleryImages = [hero1, hero2, hero3, hero4, hero5, hero6, hero7, hero8   ];
 
 const Hero = () => {
   const settings = {

@@ -341,39 +341,7 @@ const SportsOffered = () => {
           </motion.div>
         </AnimatePresence>
 
-        {/* Call to Action */}
-        {/* Call to Action */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.5 }}
-          className="text-center mt-20"
-        >
-          <div className="relative inline-block">
-            <a
-              href="/sports"
-              rel="noopener noreferrer"
-              className="z-10 relative block"
-            >
-              <motion.button
-                className="px-12 py-4 bg-gradient-to-r from-[#6CD123] to-[#B5FF4D] text-black font-bold text-lg rounded-full shadow-lg hover:shadow-xl transition-all duration-300 flex items-center gap-3 mx-auto relative z-10"
-                whileHover={{ scale: 1.05, y: -2 }}
-                whileTap={{ scale: 0.95 }}
-              >
-                <Star size={24} />
-                Explore Our Sports
-                <ArrowRight size={24} />
-              </motion.button>
-            </a>
-
-            <motion.div
-              className="absolute -inset-1 bg-gradient-to-r from-[#6CD123] to-[#B5FF4D] rounded-full opacity-20 blur-lg z-0"
-              animate={{ scale: [1, 1.1, 1] }}
-              transition={{ duration: 2, repeat: Infinity }}
-            />
-          </div>
-          <p className="text-gray-500 text-sm mt-6">--- Terms and conditions apply ---</p>
-        </motion.div>
+       
 
       </div>
 

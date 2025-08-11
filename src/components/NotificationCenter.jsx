@@ -3,9 +3,17 @@ import { Bell, X, CheckCircle, AlertCircle, Info, AlertTriangle, ChevronUp, Chev
 
 // Demo notifications for testing
 const initialNotifications = [
-  { id: 1, type: 'success', message: 'Attention Badminton Lovers, The court came alive today as we kicked off training with Padukone School of badminton at Aspire Sports Club!', time: '2 min ago' },
- 
+  {
+    id: 1,
+    type: 'success',
+    message: `✨ Grand Aspire Ganesh Nritya Fest! ✨
+Join us for two magical evenings of dance, music & celebration!      
+📅 30th & 31st August 2025 | 🕓 4:00 PM onwards
+📍 Aspire Sports Club`,
+    time: '2 min ago'
+  }
 ];
+
 
 // Add CSS for animations
 const styles = `

@@ -10,7 +10,6 @@ const initialNotifications = [
 Join us for two magical evenings of dance, music & celebration!      
 📅 30th & 31st August 2025 | 🕓 4:00 PM onwards
 📍 Aspire Sports Club`,
-    time: '2 min ago'
   }
 ];
 

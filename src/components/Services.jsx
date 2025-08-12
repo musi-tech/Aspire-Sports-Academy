@@ -227,25 +227,35 @@ const ServiceCard = ({ service, index }) => {
             </motion.div>
           </div>
 
-          {/* Action Button */}
-          <motion.button
-            className={`relative w-full py-3 bg-gradient-to-r ${service.color} text-white font-semibold rounded-2xl overflow-hidden group/btn transition-all duration-300 hover:shadow-lg`}
-            whileHover={{ scale: 1.02 }}
-            whileTap={{ scale: 0.98 }}
-            animate={isHovered ? { y: 0 } : { y: 10 }}
-            transition={{ duration: 0.3 }}
-          >
-            <span className="relative z-10 flex items-center justify-center gap-2">
-              Learn More
-              <ArrowRight size={16} className="group-hover/btn:translate-x-1 transition-transform duration-300" />
-            </span>
-            <motion.div
-              className="absolute inset-0 bg-white/20"
-              initial={{ x: '-100%' }}
-              whileHover={{ x: '100%' }}
-              transition={{ duration: 0.6 }}
-            />
-          </motion.button>
+         {/* Action Button */}
+<a
+  href="https://wa.me/918956585865?text=Hello,%20can%20I%20get%20more%20info%20on%20this%3F"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  <motion.button
+    className={`relative w-full py-3 bg-gradient-to-r ${service.color} text-white font-semibold rounded-2xl overflow-hidden group/btn transition-all duration-300 hover:shadow-lg`}
+    whileHover={{ scale: 1.02 }}
+    whileTap={{ scale: 0.98 }}
+    animate={isHovered ? { y: 0 } : { y: 10 }}
+    transition={{ duration: 0.3 }}
+  >
+    <span className="relative z-10 flex items-center justify-center gap-2">
+      Learn More
+      <ArrowRight
+        size={16}
+        className="group-hover/btn:translate-x-1 transition-transform duration-300"
+      />
+    </span>
+    <motion.div
+      className="absolute inset-0 bg-white/20"
+      initial={{ x: '-100%' }}
+      whileHover={{ x: '100%' }}
+      transition={{ duration: 0.6 }}
+    />
+  </motion.button>
+</a>
+
         </div>
       </div>
     </motion.div>

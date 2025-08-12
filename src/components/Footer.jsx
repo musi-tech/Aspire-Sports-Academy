@@ -20,13 +20,7 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Footer Middle: Links */}
-        <div className="flex flex-col lg:flex-row justify-between items-center mb-6">
-          <div className="flex space-x-6 mb-4 lg:mb-0">
-            <a href="/terms-and-conditions" className="text-lg hover:text-[#6CD123] transition duration-300">Terms of Service</a>
-            <a href="/privacy-policy" className="text-lg hover:text-[#6CD123] transition duration-300">Privacy Policy</a>
-          </div>
-        </div>
+       
 
         {/* Footer Bottom: Copyright */}
         <div className="text-center">

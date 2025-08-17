@@ -20,7 +20,7 @@ const Footer = () => {
           </div>
         </div>
 
-       <div className="flex flex-col lg:flex-row justify-between items-center mb-6">
+    {/* <div className="flex flex-col lg:flex-row justify-between items-center mb-6">
 
 
           <div className="flex space-x-6 mb-4 lg:mb-0">
@@ -35,7 +35,7 @@ const Footer = () => {
           </div>
 
 
-        </div>
+        </div> */}
 
         {/* Footer Bottom: Copyright */}
         <div className="text-center">

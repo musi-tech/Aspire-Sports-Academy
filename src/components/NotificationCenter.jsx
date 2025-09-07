@@ -4,12 +4,7 @@ import { Bell, X, CheckCircle, AlertCircle, Info, AlertTriangle, ChevronUp, Chev
 // Demo notifications for testing
 const initialNotifications = [
   {
-    id: 1,
-    type: 'success',
-    message: `✨ Grand Aspire Ganesh Nritya Fest! ✨
-Join us for two magical evenings of dance, music & celebration!      
-📅 30th & 31st August 2025 | 🕓 4:00 PM onwards
-📍 Aspire Sports Club`,
+    
   }
 ];
 

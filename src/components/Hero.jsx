@@ -64,7 +64,7 @@ const Hero = () => {
           transition={{ duration: 1.2, ease: "easeOut", delay: 0.3 }}
           className="backdrop- rounded-xl px-6 py-8 md:px-12 md:py-10 max-w-3xl"
         >
-          <h1 className="text-2xl md:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-lime-400 via-emerald-400 to-green-500 mb-6 animate-gradient">
+          <h1 className="text-2xl md:text-4xl font-bold text-transparent bg-clip-text bg-red-600 mb-6 animate-gradient">
             Where Passion Meets Performance
           </h1>
           <p className="text-lg md:text-xl text-gray-200 font-medium">

@@ -32,14 +32,7 @@ const MembershipPlans = () => {
         "Any 2 members are permitted to select any one sport for coaching."
       ]
     },
-    {
-        title: "Swimming Pool Membership",
-        details: [
-          "1 Adult",
-          "All access to the Sports Club",
-          "Individual member is permitted to select any one sport for coaching."
-        ]
-      },
+   
   ];
 
   return (

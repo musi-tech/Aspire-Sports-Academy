@@ -60,12 +60,12 @@ const sportsData = [
     description: "A safe and fun environment for toddlers to explore movement, develop motor skills, and enjoy early sports activities through play-based learning and gentle guidance.",
    
     images: [
-      "https://res.cloudinary.com/dutlotmmd/image/upload/v1754420110/epc0bpy5ksyanoa0ost9.jpg",
-      "https://res.cloudinary.com/dutlotmmd/image/upload/v1754420116/hd2gogsiogrgyp6gvzrf.jpg",
-      "https://res.cloudinary.com/dutlotmmd/image/upload/v1754420125/nlwcz9bbrk4kqp1ymtls.jpg",
-      "https://res.cloudinary.com/dutlotmmd/image/upload/v1754420133/kmblyunvbfjpc58vc5sr.jpg",
-      "https://res.cloudinary.com/dutlotmmd/image/upload/v1754420150/rzc0933sgatrrbzdqlse.jpg",
-      "https://res.cloudinary.com/dutlotmmd/image/upload/v1754420162/ifgvjswjzbbweonagpw4.jpg"
+      "https://res.cloudinary.com/dutlotmmd/image/upload/v1765722690/ane4hhxrgkfc8m6wn4wy.jpg",
+      "https://res.cloudinary.com/dutlotmmd/image/upload/v1765722733/zyhifcn1ih3iitx8mkkg.jpg",
+      "https://res.cloudinary.com/dutlotmmd/image/upload/v1765722789/can6gjqjamquxudksxhp.jpg",
+      "https://res.cloudinary.com/dutlotmmd/image/upload/v1765722890/bahoaoneh4ldjbb8tvjf.jpg",
+      "https://res.cloudinary.com/dutlotmmd/image/upload/v1765722868/csuyq8ry60s5ra59zicp.jpg",
+      "https://res.cloudinary.com/dutlotmmd/image/upload/v1765722825/yioyfa4r2bxdnci9tdvn.jpg"
     ]
   },
   {

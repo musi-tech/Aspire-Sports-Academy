@@ -61,17 +61,13 @@ const sportsData = [
    
     images: [
       "https://res.cloudinary.com/dutlotmmd/image/upload/v1765722690/ane4hhxrgkfc8m6wn4wy.jpg",
-      "https://res.cloudinary.com/dutlotmmd/image/upload/v1754420110/epc0bpy5ksyanoa0ost9.jpg",
       "https://res.cloudinary.com/dutlotmmd/image/upload/v1765722868/csuyq8ry60s5ra59zicp.jpg",
       "https://res.cloudinary.com/dutlotmmd/image/upload/v1765722789/can6gjqjamquxudksxhp.jpg",
-      "https://res.cloudinary.com/dutlotmmd/image/upload/v1754420125/nlwcz9bbrk4kqp1ymtls.jpg",
-      "https://res.cloudinary.com/dutlotmmd/image/upload/v1754420133/kmblyunvbfjpc58vc5sr.jpg",
-      "https://res.cloudinary.com/dutlotmmd/image/upload/v1754420150/rzc0933sgatrrbzdqlse.jpg",
       "https://res.cloudinary.com/dutlotmmd/image/upload/v1765813936/mysvvnsouceah9e5a5qn.jpg",
-      "https://res.cloudinary.com/dutlotmmd/image/upload/v1765813963/anvigrysgslumc2rkyh7.jpg",
       "https://res.cloudinary.com/dutlotmmd/image/upload/v1765813999/gxcryaf5wbvwfwmwai7z.jpg",
-      "https://res.cloudinary.com/dutlotmmd/image/upload/v1765814014/afatxajdbk0jhn8i2k1h.jpg",
       "https://res.cloudinary.com/dutlotmmd/image/upload/v1765814105/e1vjfymtxuj9qtzjyrp4.jpg",
+      "https://res.cloudinary.com/dutlotmmd/image/upload/v1765814014/afatxajdbk0jhn8i2k1h.jpg",
+      "https://res.cloudinary.com/dutlotmmd/image/upload/v1765813963/anvigrysgslumc2rkyh7.jpg",     
      
     ]
   },

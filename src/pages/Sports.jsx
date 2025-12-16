@@ -28,12 +28,15 @@ const sportsData = [
     description: "Master the gentleman's game on our professionally maintained cricket grounds. From batting techniques to bowling strategies, our expert coaches will elevate your cricket skills.",
    
     images: [
-      "https://res.cloudinary.com/dutlotmmd/image/upload/v1754421779/xdabqwoo8jefwvdrizxg.jpg",
+      "https://res.cloudinary.com/dutlotmmd/image/upload/v1765869990/hvixma5vvfgus23hakd3.png",
+      "https://res.cloudinary.com/dutlotmmd/image/upload/v1765870014/vkgmibquopknh02ling9.jpg",
+      "https://res.cloudinary.com/dutlotmmd/image/upload/v1765870033/iljrqhajwefnjib0qnj1.jpg",
+      "https://res.cloudinary.com/dutlotmmd/image/upload/v1765870050/dvzxblzvnc32ih4vmchy.jpg",
+      "https://res.cloudinary.com/dutlotmmd/image/upload/v1765870064/ibrrsiuseui2eij9apql.jpg",
+      "https://res.cloudinary.com/dutlotmmd/image/upload/v1765870076/j7hmij55enrmitauxeiv.jpg",
       "https://res.cloudinary.com/dutlotmmd/image/upload/v1754421785/sdshsunx7q1cczfeemyo.jpg",
       "https://res.cloudinary.com/dutlotmmd/image/upload/v1754421791/rfwolkunmcm0stej6lum.jpg",
       "https://res.cloudinary.com/dutlotmmd/image/upload/v1754421797/mn30keypiy39wr94artp.jpg",
-      "https://res.cloudinary.com/dutlotmmd/image/upload/v1754421804/ydjiaeq3vsjzf9jylh5n.jpg",
-      "https://res.cloudinary.com/dutlotmmd/image/upload/v1754421811/hnh5x0c8o8rwyznzgomj.jpg"
     ]
   },
   {

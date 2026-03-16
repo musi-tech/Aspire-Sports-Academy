@@ -65,29 +65,29 @@ const Navbar = () => {
               </li>
             ))}
 
-            {/* Brochure Button - Mobile only */}
+            {/* Book Turf Button - Mobile only */}
             <li className="block lg:hidden">
               <a
-                href="https://drive.google.com/file/d/1TOHQP0nzPEik_xDb62yECUW_hxFQwejj/view?usp=sharing"
+                href="https://playo.co/venues/pune/aspire-sports-club-manjri-farm-pune"
                 className="inline-block bg-[#6CD123] hover:bg-[#5BB61D] text-white px-6 py-3 rounded-xl font-bold transition-transform duration-300"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Download Brochure
+                🏟️ Book Turf
               </a>
             </li>
           </ul>
         </div>
 
-        {/* Brochure Button - Desktop only */}
+        {/* Book Turf Button - Desktop only */}
         <div className="hidden lg:block">
           <a
-            href="https://drive.google.com/file/d/1TOHQP0nzPEik_xDb62yECUW_hxFQwejj/view?usp=sharing"
+            href="https://playo.co/venues/pune/aspire-sports-club-manjri-farm-pune"
             className="inline-block bg-[#6CD123] hover:bg-[#5BB61D] text-white px-8 py-3 rounded-xl font-bold hover:scale-105 transition-transform duration-300"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Download Brochure
+            🏟️ Book Turf
           </a>
         </div>
       </nav>

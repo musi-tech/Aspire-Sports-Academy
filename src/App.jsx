@@ -5,9 +5,14 @@ import TermsAndConditions from './pages/TermsAndConditions.jsx';
 import PolicyPages from './pages/PolicyPages.jsx';
 import Service from './pages/Service';
 import Sports from './pages/Sports';
-import Membership from './pages/Membership';
+
 import Contact from './pages/Contact';
 import About from './pages/About';
+import Career from './pages/Career';
+import Partners from './pages/Partners';
+import MembershipPlans from './pages/Membership';
+import GroupFitness from './pages/GroupFitness';
+import EventsCalendar from './pages/EventsCalendar';
 
 function App() {
   return (
@@ -20,9 +25,14 @@ function App() {
         <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
         <Route path="/privacy-policy" element={<PolicyPages />} />
         <Route path="/sports" element={<Sports />} />
-        <Route path="/membership" element={<Membership />} />
+
         <Route path="/contact" element={<Contact />} />
         <Route path="/about" element={<About />} />
+        <Route path="/career" element={<Career />} />
+        <Route path="/partners" element={<Partners />} />
+        <Route path="/membership" element={<MembershipPlans />} />
+        <Route path="/group-fitness" element={<GroupFitness />} />
+        <Route path="/events" element={<EventsCalendar />} />
       </Routes>
     </>
   );

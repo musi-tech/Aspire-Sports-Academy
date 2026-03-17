@@ -17,7 +17,7 @@ const Navbar = () => {
     { to: '/service', text: 'Services' },
     { to: '/membership', text: 'Membership' },
     { to: '/partners', text: 'Partners' },
-    { to: '/career', text: 'Career' },
+    { to: '/career', text: 'Careers' },
     { to: '/contact', text: 'Contact Us' },
   ];
 

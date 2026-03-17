@@ -328,27 +328,20 @@ export default function Partners() {
 
                 <div className="space-y-4">
                   <a
-                    href="mailto:partners@aspiresportsacademy.in"
+                    href="mailto:contact@aspiresportsclub.com"
                     className="flex items-center gap-3 w-full px-6 py-4 bg-gradient-to-r from-[#6CD123] to-[#B5FF4D] text-black font-bold rounded-2xl hover:scale-105 transition-transform duration-300 shadow-lg shadow-[#6CD123]/30 justify-center"
                   >
-                    <FaEnvelope /> partners@aspiresportsacademy.in
+                    <FaEnvelope /> contact@aspiresportsclub.com
                   </a>
                   <a
                     href="tel:+917066870033"
                     className="flex items-center gap-3 w-full px-6 py-4 border border-[#6CD123]/50 text-[#6CD123] font-semibold rounded-2xl hover:bg-[#6CD123]/10 transition-all duration-300 justify-center"
                   >
-                    <FaPhone /> +91 70668 70033
+                    <FaPhone /> +91 89565 85865
                   </a>
                 </div>
 
-                <div className="mt-6 pt-6 border-t border-gray-800">
-                  <div className="flex items-center gap-3">
-                    <FaGlobeAsia className="text-[#6CD123]" />
-                    <span className="text-gray-400 text-sm">
-                      Aspire Sports Academy, Nagpur, Maharashtra, India
-                    </span>
-                  </div>
-                </div>
+              
               </motion.div>
             </div>
           </div>

@@ -10,7 +10,14 @@ import hero3 from '../assets/hp11.webp';
 
 import aspireLogo from '../assets/aspire_logo_hori.svg';
 
-const galleryImages = [hero1, hero2, hero3];
+const galleryImages = [
+  hero1, 
+  hero2, 
+  hero3,
+  'https://res.cloudinary.com/dutlotmmd/image/upload/v1754420559/h4crxhxpza6qpo5m0sfh.jpg',
+  'https://res.cloudinary.com/dutlotmmd/image/upload/v1765722868/csuyq8ry60s5ra59zicp.jpg',
+  'https://res.cloudinary.com/dutlotmmd/image/upload/v1754419686/fodiywhkalzhfb1g03iz.jpg'
+];
 
 const Hero = () => {
   const settings = {

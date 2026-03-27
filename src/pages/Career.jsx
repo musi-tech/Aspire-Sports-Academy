@@ -10,110 +10,7 @@ import {
 import { GiCricketBat } from 'react-icons/gi';
 
 const jobOpenings = [
-  {
-    id: 1,
-    title: 'Swimming Coach',
-    type: 'Full-Time',
-    location: 'Pune, MH',
-    icon: <FaSwimmer className="text-blue-400 text-3xl" />,
-    gradient: 'from-blue-500/20 to-cyan-500/20',
-    border: 'border-blue-500/40',
-    badge: 'bg-blue-500/20 text-blue-300',
-    description:
-      'Lead swimming training sessions for kids and adults. Michael Phelps program certified coaches preferred.',
-    requirements: ['3+ years coaching experience', 'RLSS/STA certification', 'Strong communication skills'],
-  },
-  {
-    id: 2,
-    title: 'Cricket Coach',
-    type: 'Full-Time',
-    location: 'Pune, MH',
-    icon: <GiCricketBat className="text-green-400 text-3xl" />,
-    gradient: 'from-green-500/20 to-emerald-500/20',
-    border: 'border-green-500/40',
-    badge: 'bg-green-500/20 text-green-300',
-    description:
-      'Develop youth cricket talent. Experience in batting techniques, bowling drills and match analysis required.',
-    requirements: ['BCCI Level 2 or above', '4+ years coaching', 'Video analysis experience'],
-  },
-  {
-    id: 3,
-    title: 'Badminton Coach',
-    type: 'Full-Time',
-    location: 'Pune, MH',
-    icon: <span className="text-3xl">🏸</span>,
-    gradient: 'from-red-500/20 to-pink-500/20',
-    border: 'border-red-500/40',
-    badge: 'bg-red-500/20 text-red-300',
-    description:
-      'Train players at grassroots and advanced levels in partnership with the Padukone School of Badminton.',
-    requirements: ['BAI certification preferred', '3+ years coaching', 'Competitive match experience'],
-  },
-  {
-    id: 4,
-    title: 'Lawn Tennis Coach',
-    type: 'Full-Time',
-    location: 'Pune, MH',
-    icon: <FaTableTennis className="text-yellow-400 text-3xl" />,
-    gradient: 'from-yellow-500/20 to-green-500/20',
-    border: 'border-yellow-500/40',
-    badge: 'bg-yellow-500/20 text-yellow-300',
-    description:
-      'Coach players on footwork, strokes and match tactics. Association with Spolto Lawn Tennis program is a plus.',
-    requirements: ['AITA certification', '3+ years coaching', 'Experience with junior players'],
-  },
-  {
-    id: 5,
-    title: 'Football Coach',
-    type: 'Full-Time',
-    location: 'Pune, MH',
-    icon: <FaFutbol className="text-orange-400 text-3xl" />,
-    gradient: 'from-orange-500/20 to-red-500/20',
-    border: 'border-orange-500/40',
-    badge: 'bg-orange-500/20 text-orange-300',
-    description:
-      'Deliver football training programs for youth. Emphasis on skill-building, tactical awareness and team play.',
-    requirements: ['AFC D License or above', '3+ years coaching', 'Youth development background'],
-  },
-  {
-    id: 6,
-    title: 'Basketball Coach',
-    type: 'Full-Time',
-    location: 'Pune, MH',
-    icon: <FaBasketballBall className="text-purple-400 text-3xl" />,
-    gradient: 'from-purple-500/20 to-indigo-500/20',
-    border: 'border-purple-500/40',
-    badge: 'bg-purple-500/20 text-purple-300',
-    description:
-      'Inspire young athletes in basketball fundamentals, team strategies and competitive play.',
-    requirements: ['BAF certification', '3+ years experience', 'Positive attitude & passion for youth'],
-  },
-  {
-    id: 7,
-    title: 'Toddler Activity Coordinator',
-    type: 'Part-Time / Full-Time',
-    location: 'Pune, MH',
-    icon: <FaRunning className="text-pink-400 text-3xl" />,
-    gradient: 'from-pink-500/20 to-purple-500/20',
-    border: 'border-pink-500/40',
-    badge: 'bg-pink-500/20 text-pink-300',
-    description:
-      'Design and lead play-based movement activities for toddlers. Early childhood education background preferred.',
-    requirements: ['Early childhood education background', 'Patient & creative personality', 'First aid trained'],
-  },
-  {
-    id: 8,
-    title: 'Academy Operations Manager',
-    type: 'Full-Time',
-    location: 'Pune, MH',
-    icon: <FaBriefcase className="text-gray-300 text-3xl" />,
-    gradient: 'from-gray-500/20 to-slate-500/20',
-    border: 'border-gray-500/40',
-    badge: 'bg-gray-500/20 text-gray-300',
-    description:
-      'Manage day-to-day operations, member relations, scheduling and coordination across all sports verticals.',
-    requirements: ['2+ years in sports/academy management', 'Strong organizational skills', 'Team leadership'],
-  },
+
   {
     id: 9,
     title: 'Sports Club Operations Manager',
@@ -448,6 +345,12 @@ export default function Career() {
                   className="flex items-center justify-center gap-3 px-8 py-4 bg-gradient-to-r from-[#6CD123] to-[#B5FF4D] text-black font-bold rounded-full hover:scale-105 transition-transform duration-300 shadow-lg shadow-[#6CD123]/30"
                 >
                   <FaEnvelope /> contact@aspiresportsclub.com
+                </a>
+                <a
+                  href="mailto:aspiresportsclub@gmail.com"
+                  className="flex items-center justify-center gap-3 px-8 py-4 bg-gradient-to-r from-[#6CD123] to-[#B5FF4D] text-black font-bold rounded-full hover:scale-105 transition-transform duration-300 shadow-lg shadow-[#6CD123]/30"
+                >
+                  <FaEnvelope /> aspiresportsclub@gmail.com
                 </a>
               </div>
               <div className="flex items-center justify-center gap-2 text-gray-500 text-sm">

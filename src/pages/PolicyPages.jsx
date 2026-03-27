@@ -101,6 +101,7 @@ const PrivacyPolicy = () => {
                     </p>
                     <ul className="list-none pl-0 text-lg text-gray-300">
                         <li>Email: <a href="mailto:contact@aspiresportsclub.com" className="text-green-700 hover:underline">contact@aspiresportsclub.com</a></li>
+                        <li>Email: <a href="mailto:aspiresportsclub@gmail.com" className="text-green-700 hover:underline">aspiresportsclub@gmail.com</a></li>
                         <li>Phone: <a href="tel:+918956585865" className="text-green-700 hover:underline">+91 8956585865</a></li>
                     </ul>
                 </section>

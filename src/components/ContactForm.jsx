@@ -38,6 +38,9 @@ const ContactForm = () => {
                 <p className="text-lg text-[#CCCCCC] hover:text-[#6cd123] transition-colors duration-300">
                   contact@aspiresportsclub.com
                 </p>
+                <p className="text-lg text-[#CCCCCC] hover:text-[#6cd123] transition-colors duration-300">
+                  aspiresportsclub@gmail.com
+                </p>
               </div>
 
               {/* Phone */}

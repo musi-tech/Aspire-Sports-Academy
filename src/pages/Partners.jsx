@@ -41,48 +41,7 @@ Today, that principle remains the backbone of our company which has expanded to 
     highlights: ['National-level player development', 'Certified coaches', 'Long-term athlete development focus', 'Intense camps & academies'],
     description: `Padukone School of Badminton brings world-class badminton coaching and grassroots development programs. With a focus on technique, fitness and competitive mindset, they run academies and camps that have produced national-level players. Their certified coaches emphasize long-term athlete development and sportsmanship.`,
   },
-  {
-    id: 3,
-    logo: garyy,
-    name: 'Gary Kirsten Cricket India',
-    tagline: 'Professional Cricket Coaching by World Champions',
-    sport: 'Cricket',
-    sportEmoji: '🏏',
-    gradient: 'from-green-600/20 to-emerald-600/20',
-    border: 'border-green-500/40',
-    accent: '#4ADE80',
-    badge: 'bg-green-500/20 text-green-300',
-    highlights: ['Internationally experienced coaches', 'Batting methodology training', 'Mental preparation programs', 'High-performance camps'],
-    description: `Gary Kirsten Cricket India offers professional cricket coaching, batting methodology, and high-performance camps led by internationally experienced coaches. They focus on skill refinement, mental preparation and match-situation training for youth and senior players across the country.`,
-  },
-  {
-    id: 4,
-    logo: spolto,
-    name: 'Spolto Lawn Tennis',
-    tagline: 'Modern Tennis Coaching for All Levels',
-    sport: 'Lawn Tennis',
-    sportEmoji: '🎾',
-    gradient: 'from-yellow-600/20 to-lime-600/20',
-    border: 'border-yellow-500/40',
-    accent: '#FACC15',
-    badge: 'bg-yellow-500/20 text-yellow-300',
-    highlights: ['Beginner to advanced programs', 'Professional footwork training', 'Shot development system', 'Progressive tournaments'],
-    description: `Spolto Lawn Tennis provides modern tennis coaching for beginners through advanced players. Their programs focus on footwork, shot development and match play strategy, delivered at well-maintained courts with progressive training plans and tournaments.`,
-  },
-  {
-    id: 5,
-    logo: abc,
-    name: 'ABC Sports & Fitness Academy',
-    tagline: 'Basketball, Fitness & Youth Development',
-    sport: 'Basketball',
-    sportEmoji: '🏀',
-    gradient: 'from-purple-600/20 to-indigo-600/20',
-    border: 'border-purple-500/40',
-    accent: '#A78BFA',
-    badge: 'bg-purple-500/20 text-purple-300',
-    highlights: ['Basketball programs for all ages', 'Physical conditioning systems', 'Team-building activities', 'School & club competition prep'],
-    description: `ABC Sports & Fitness Academy runs basketball programs, fitness training and youth development initiatives. They combine skill coaching, physical conditioning and team-building to create versatile athletes prepared for school, club and competitive play.`,
-  },
+ 
 ];
 
 const partnerBenefits = [
@@ -332,6 +291,12 @@ export default function Partners() {
                     className="flex items-center gap-3 w-full px-6 py-4 bg-gradient-to-r from-[#6CD123] to-[#B5FF4D] text-black font-bold rounded-2xl hover:scale-105 transition-transform duration-300 shadow-lg shadow-[#6CD123]/30 justify-center"
                   >
                     <FaEnvelope /> contact@aspiresportsclub.com
+                  </a>
+                  <a
+                    href="mailto:aspiresportsclub@gmail.com"
+                    className="flex items-center gap-3 w-full px-6 py-4 bg-gradient-to-r from-[#6CD123] to-[#B5FF4D] text-black font-bold rounded-2xl hover:scale-105 transition-transform duration-300 shadow-lg shadow-[#6CD123]/30 justify-center"
+                  >
+                    <FaEnvelope /> aspiresportsclub@gmail.com
                   </a>
                   <a
                     href="tel:+917066870033"

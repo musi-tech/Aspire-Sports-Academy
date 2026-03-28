@@ -24,6 +24,26 @@ const jobOpenings = [
       'Oversee day-to-day operations of the sports club, including activities, coaching programs, facility bookings, and event coordination while maintaining relationships with members and parents.',
     requirements: ['Full-time availability and flexibility in working hours', 'Strong organizational and coordination skills', 'Excellent communication and interpersonal skills', 'Prior experience in sports management or operations (preferred)', 'Ability to handle multiple tasks and work in a fast-paced environment', 'Good rapport-building skills, especially with parents and young athletes'],
   },
+  {
+    id: 10,
+    title: 'Cricket Coach',
+    type: 'Part-Time (4–5 Days per Week)',
+    location: 'Pune, MH',
+    icon: <GiCricketBat className="text-green-400 text-3xl" />,
+    gradient: 'from-green-500/20 to-emerald-500/20',
+    border: 'border-green-500/40',
+    badge: 'bg-green-500/20 text-green-300',
+    description:
+      'Lead structured cricket coaching sessions for beginners and intermediate players, focusing on batting, bowling, fielding, fitness, and match preparedness in a positive and disciplined environment.',
+    requirements: [
+      'Minimum 1–2 years of cricket coaching or playing experience preferred',
+      'Experience coaching kids and beginners is an advantage',
+      'District, state, or club-level playing experience preferred',
+      'Strong communication skills and ability to mentor young athletes',
+      'Passion for sports development and team work',
+      'Availability 4–5 days per week',
+    ],
+  },
 ];
 
 const perks = [
@@ -63,7 +83,7 @@ export default function Career() {
       <div className="min-h-screen bg-black text-white overflow-x-hidden">
 
         {/* ─── HERO ─── */}
-        <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden pt-24">
+        <section className="relative min-h-[90vh] flex flex-col items-center justify-center overflow-hidden pt-32 md:pt-24">
           {/* animated bg blobs */}
           <div className="absolute inset-0 z-0">
             <div className="absolute w-[500px] h-[500px] rounded-full bg-[#6CD123]/10 blur-3xl -top-32 -left-32 animate-pulse" />
@@ -76,7 +96,7 @@ export default function Career() {
             />
           </div>
 
-          <div className="relative z-10 text-center px-6 max-w-5xl mx-auto">
+          <div className="relative z-10 text-center px-6 max-w-5xl mx-auto flex flex-col items-center justify-center py-20">
             <motion.div
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}
@@ -90,7 +110,7 @@ export default function Career() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.9, delay: 0.1 }}
-              className="text-5xl md:text-7xl font-extrabold leading-tight mb-6"
+              className="text-4xl sm:text-5xl md:text-7xl font-extrabold leading-tight mb-6"
             >
               Build a Career in{' '}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#6CD123] to-[#B5FF4D]">
@@ -102,7 +122,7 @@ export default function Career() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.3 }}
-              className="text-xl md:text-2xl text-gray-300 mb-10 max-w-3xl mx-auto leading-relaxed"
+              className="text-lg md:text-2xl text-gray-300 mb-10 max-w-3xl mx-auto leading-relaxed"
             >
               Join Aspire Sports Academy and shape the next generation of champions.
               Whether you're a coach, coordinator or operator — your passion belongs here.
@@ -112,36 +132,36 @@ export default function Career() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.5 }}
-              className="flex flex-wrap justify-center gap-4"
+              className="flex flex-col sm:flex-row justify-center gap-4 mb-16"
             >
               <a
                 href="#openings"
-                className="px-8 py-4 bg-gradient-to-r from-[#6CD123] to-[#B5FF4D] text-black font-bold rounded-full text-lg hover:scale-105 transition-transform duration-300 shadow-lg shadow-[#6CD123]/30"
+                className="px-8 py-4 bg-gradient-to-r from-[#6CD123] to-[#B5FF4D] text-black font-bold rounded-full text-base sm:text-lg hover:scale-105 transition-transform duration-300 shadow-lg shadow-[#6CD123]/30"
               >
                 View Open Positions
               </a>
               <a
                 href="#apply"
-                className="px-8 py-4 border border-[#6CD123] text-[#6CD123] font-bold rounded-full text-lg hover:bg-[#6CD123]/10 transition-all duration-300"
+                className="px-8 py-4 border border-[#6CD123] text-[#6CD123] font-bold rounded-full text-base sm:text-lg hover:bg-[#6CD123]/10 transition-all duration-300"
               >
                 Apply Now
               </a>
             </motion.div>
-          </div>
 
-          {/* floating sport pills */}
-          <div className="absolute bottom-0 left-0 right-0 flex justify-center gap-4 pb-10 flex-wrap px-4">
-            {sportsOffered.map((s, i) => (
-              <motion.div
-                key={s.name}
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.8 + i * 0.1 }}
-                className={`bg-gradient-to-r ${s.color} text-white px-4 py-2 rounded-full text-sm font-semibold flex items-center gap-2 shadow-lg`}
-              >
-                <span>{s.emoji}</span> {s.name}
-              </motion.div>
-            ))}
+            {/* sports pills */}
+            <div className="flex justify-center gap-2 sm:gap-4 flex-wrap max-w-4xl mx-auto">
+              {sportsOffered.map((s, i) => (
+                <motion.div
+                  key={s.name}
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.8 + i * 0.1 }}
+                  className={`bg-gradient-to-r ${s.color} text-white px-3 sm:px-4 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm font-semibold flex items-center gap-2 shadow-lg`}
+                >
+                  <span>{s.emoji}</span> {s.name}
+                </motion.div>
+              ))}
+            </div>
           </div>
         </section>
 

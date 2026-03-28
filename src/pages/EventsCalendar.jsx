@@ -60,58 +60,11 @@ const events = {
   '2026-06-21': [{ type: 'Camp',           name: 'Tennis Intensive Camp' }],
   '2026-06-27': [{ type: 'MembersDay',     name: 'Monthly Members Meet' }],
 
-  '2026-07-04': [{ type: 'OpenDay',        name: 'Mid-Year Open House' }],
-  '2026-07-11': [{ type: 'Tournament',     name: 'Tennis Grand Prix' }],
-  '2026-07-12': [{ type: 'Tournament',     name: 'Tennis Grand Prix' }],
-  '2026-07-18': [{ type: 'FitnessWeek',   name: 'Monsoon Fitness Week' }],
-  '2026-07-19': [{ type: 'FitnessWeek',   name: 'Monsoon Fitness Week' }],
-  '2026-07-25': [{ type: 'MembersDay',     name: 'Monthly Members Meet' }],
-  '2026-07-26': [{ type: 'Workshop',       name: 'Nutrition Masterclass' }],
-
-  '2026-08-01': [{ type: 'Tournament',     name: 'Badminton Women\'s Singles' }],
-  '2026-08-02': [{ type: 'Tournament',     name: 'Badminton Women\'s Singles' }],
-  '2026-08-08': [{ type: 'Camp',           name: 'Junior Swimming Camp' }],
-  '2026-08-09': [{ type: 'Camp',           name: 'Junior Swimming Camp' }],
-  '2026-08-15': [{ type: 'CelebrationDay', name: 'Independence Day Fitness Run' }],
-  '2026-08-22': [{ type: 'Workshop',       name: 'Strength & Conditioning Workshop' }],
-  '2026-08-29': [{ type: 'MembersDay',     name: 'Members Appreciation Gala' }],
-
-  '2026-09-05': [{ type: 'Tournament',     name: 'Multi-Sport Championship' }],
-  '2026-09-06': [{ type: 'Tournament',     name: 'Multi-Sport Championship' }],
-  '2026-09-07': [{ type: 'Tournament',     name: 'Multi-Sport Championship' }],
-  '2026-09-12': [{ type: 'OpenDay',        name: 'Aspire Sports Discovery Day' }],
-  '2026-09-19': [{ type: 'Camp',           name: 'Badminton Academy Camp' }],
-  '2026-09-20': [{ type: 'Camp',           name: 'Badminton Academy Camp' }],
-  '2026-09-26': [{ type: 'MembersDay',     name: 'Monthly Members Meet' }],
-
-  '2026-10-03': [{ type: 'FitnessWeek',   name: 'Fitness Fest 2026' }],
-  '2026-10-04': [{ type: 'FitnessWeek',   name: 'Fitness Fest 2026' }],
-  '2026-10-05': [{ type: 'FitnessWeek',   name: 'Fitness Fest 2026' }],
-  '2026-10-10': [{ type: 'Tournament',     name: 'Squash Open Championship' }],
-  '2026-10-11': [{ type: 'Tournament',     name: 'Squash Open Championship' }],
-  '2026-10-17': [{ type: 'Workshop',       name: 'Sports Psychology Talk' }],
-  '2026-10-24': [{ type: 'CelebrationDay', name: 'Diwali Sports Night' }],
-  '2026-10-31': [{ type: 'MembersDay',     name: 'Monthly Members Meet' }],
-
-  '2026-11-07': [{ type: 'Tournament',     name: 'Annual Badminton Grand Slam' }],
-  '2026-11-08': [{ type: 'Tournament',     name: 'Annual Badminton Grand Slam' }],
-  '2026-11-14': [{ type: 'Camp',           name: 'Cricket T20 Camp' }],
-  '2026-11-15': [{ type: 'Camp',           name: 'Cricket T20 Camp' }],
-  '2026-11-21': [{ type: 'Workshop',       name: 'End-of-Year Wellness Workshop' }],
-  '2026-11-28': [{ type: 'MembersDay',     name: 'Monthly Members Meet' }],
-
-  '2026-12-05': [{ type: 'Tournament',     name: 'Year-End Swimming Finals' }],
-  '2026-12-06': [{ type: 'Tournament',     name: 'Year-End Swimming Finals' }],
-  '2026-12-12': [{ type: 'OpenDay',        name: 'Year-End Open House' }],
-  '2026-12-19': [{ type: 'FitnessWeek',   name: 'New Year Countdown Fitness Week' }],
-  '2026-12-20': [{ type: 'FitnessWeek',   name: 'New Year Countdown Fitness Week' }],
-  '2026-12-25': [{ type: 'CelebrationDay', name: 'Christmas Sports Day' }],
-  '2026-12-31': [{ type: 'CelebrationDay', name: 'New Year\'s Eve Celebration' }],
+ 
 };
 
 const MONTHS = [
   'January','February','March','April','May','June',
-  'July','August','September','October','November','December'
 ];
 
 const getDaysInMonth = (month, year) => new Date(year, month + 1, 0).getDate();

@@ -15,7 +15,6 @@ const EVENT_TYPES = {
   OpenDay:       { color: 'bg-cyan-500',   text: 'text-cyan-300',   border: 'border-cyan-400',   label: 'Open Day' },
 };
 
-/* ─── Full 2026 Events ─── */
 const events = {
   '2026-01-01': [{ type: 'CelebrationDay', name: "New Year Open House" }],
   '2026-01-10': [{ type: 'Tournament',     name: 'Badminton Open (Juniors)' }],

@@ -44,6 +44,66 @@ const jobOpenings = [
       'Availability 4–5 days per week',
     ],
   },
+  {
+    id: 11,
+    title: 'Football Coach + Athlete',
+    type: 'Part-Time (4–5 Days per Week)',
+    location: 'Pune, MH',
+    icon: <FaFutbol className="text-orange-400 text-3xl" />,
+    gradient: 'from-orange-500/20 to-red-500/20',
+    border: 'border-orange-500/40',
+    badge: 'bg-orange-500/20 text-orange-300',
+    description:
+      'Aspire Sports Club, Pune is looking for a passionate and dedicated Football Coach + Athlete to train and develop young players. The candidate will be responsible for conducting structured football training sessions while also actively participating as a player when required.',
+    requirements: [
+      'Minimum 1–2 years of football coaching or playing experience preferred',
+      'Experience in coaching kids and beginners will be an added advantage',
+      'Candidates who have played district, state, or club-level football will be preferred',
+      'Good communication skills and ability to work with children and young players',
+      'Passion for football and overall player development',
+      'Physically fit and capable of actively participating as an athlete',
+    ],
+  },
+  {
+    id: 12,
+    title: 'Toddler Discovery Multi-Sports Coach',
+    type: 'Part-Time (4–5 Days per Week)',
+    location: 'Pune, MH',
+    icon: <FaRunning className="text-pink-400 text-3xl" />,
+    gradient: 'from-pink-500/20 to-purple-500/20',
+    border: 'border-pink-500/40',
+    badge: 'bg-pink-500/20 text-pink-300',
+    description:
+      'Aspire Sports Club, Pune is looking for an enthusiastic and caring Toddler Discovery Multi-Sports Coach to introduce young children (ages 2.5 to 6 years) to a variety of sports in a fun, safe, and engaging environment.',
+    requirements: [
+      'Minimum 1–2 years of experience working with young children or in sports coaching preferred',
+      'Background in early childhood education, physical education, or sports training is an added advantage',
+      'Experience handling toddlers (2.5–6 years) will be highly preferred',
+      'Friendly, patient, and energetic personality',
+      'Ability to manage groups of toddlers with care and attention',
+      'Availability to work 4–5 days per week',
+    ],
+  },
+  {
+    id: 13,
+    title: 'Turf Booking & Management Executive',
+    type: 'Full-Time / Part-Time',
+    location: 'Pune, MH',
+    icon: <FaBriefcase className="text-blue-400 text-3xl" />,
+    gradient: 'from-blue-500/20 to-cyan-500/20',
+    border: 'border-blue-500/40',
+    badge: 'bg-blue-500/20 text-blue-300',
+    description:
+      'Aspire Sports Club, Pune is looking for a responsible and organized Turf Booking & Management Executive to handle daily turf operations, manage bookings, and ensure a smooth experience for all members and visitors.',
+    requirements: [
+      'Minimum 1 year of experience in operations, facility management, or customer service preferred',
+      'Experience in sports facility management will be an added advantage',
+      'Good communication and customer handling skills',
+      'Basic knowledge of booking systems and record management',
+      'Ability to manage multiple tasks and work in a fast-paced environment',
+      'Willingness to work in flexible shifts, including evenings and weekends',
+    ],
+  },
 ];
 
 const perks = [

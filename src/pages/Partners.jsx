@@ -293,10 +293,10 @@ export default function Partners() {
                     <FaEnvelope /> contact@aspiresportsclub.com
                   </a>
                   <a
-                    href="mailto:aspiresportsclub@gmail.com"
+                    href="mailto:aspiresportsclubpune@gmail.com"
                     className="flex items-center gap-3 w-full px-6 py-4 bg-gradient-to-r from-[#6CD123] to-[#B5FF4D] text-black font-bold rounded-2xl hover:scale-105 transition-transform duration-300 shadow-lg shadow-[#6CD123]/30 justify-center"
                   >
-                    <FaEnvelope /> aspiresportsclub@gmail.com
+                    <FaEnvelope /> aspiresportsclubpune@gmail.com
                   </a>
                   <a
                     href="tel:+917066870033"

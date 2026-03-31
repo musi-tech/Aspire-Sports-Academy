@@ -19,7 +19,7 @@ const ContactUs = () => {
             </div>
             <h3 className="text-2xl text-white font-semibold mb-2">Email Us</h3>
             <p className="text-gray-300 text-lg">contact@aspiresportsclub.com</p>
-            <p className="text-gray-300 text-lg">aspiresportsclub@gmail.com</p>
+            <p className="text-gray-300 text-lg">aspiresportsclubpune@gmail.com</p>
 
           </div>
 

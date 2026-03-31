@@ -200,9 +200,11 @@ export default function Career() {
               >
                 View Open Positions
               </a>
-              <a
-                href="#apply"
-                className="px-8 py-4 border border-[#6CD123] text-[#6CD123] font-bold rounded-full text-base sm:text-lg hover:bg-[#6CD123]/10 transition-all duration-300"
+               <a
+                href="https://wa.me/918956585865"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-8 py-4 border border-[#6CD123] text-[#6CD123] font-bold rounded-full text-base sm:text-lg hover:bg-[#6CD123]/10 transition-all duration-300 flex items-center justify-center gap-2"
               >
                 Apply Now
               </a>
@@ -419,24 +421,26 @@ export default function Career() {
                 We review every application carefully and respond within 5 business days.
               </p>
 
-              <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
+               <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
                 <a
-                  href="mailto:contact@aspiresportsclub.com"
-                  className="flex items-center justify-center gap-3 px-8 py-4 bg-gradient-to-r from-[#6CD123] to-[#B5FF4D] text-black font-bold rounded-full hover:scale-105 transition-transform duration-300 shadow-lg shadow-[#6CD123]/30"
+                  href="https://wa.me/918956585865"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center justify-center gap-3 px-8 py-4 bg-[#6CD123] text-black font-bold rounded-full hover:scale-105 transition-transform duration-300 shadow-lg shadow-[#6CD123]/30"
                 >
-                  <FaEnvelope /> contact@aspiresportsclub.com
+                  <FaEnvelope className="hidden" /> Apply via WhatsApp
                 </a>
                 <a
-                  href="mailto:aspiresportsclub@gmail.com"
-                  className="flex items-center justify-center gap-3 px-8 py-4 bg-gradient-to-r from-[#6CD123] to-[#B5FF4D] text-black font-bold rounded-full hover:scale-105 transition-transform duration-300 shadow-lg shadow-[#6CD123]/30"
+                  href="mailto:aspiresportsclubpune@gmail.com"
+                  className="flex items-center justify-center gap-3 px-8 py-4 border border-[#6CD123] text-[#6CD123] font-bold rounded-full hover:bg-[#6CD123]/10 transition-all duration-300"
                 >
-                  <FaEnvelope /> aspiresportsclub@gmail.com
+                  <FaEnvelope /> aspiresportsclubpune@gmail.com
                 </a>
               </div>
               <div className="flex items-center justify-center gap-2 text-gray-500 text-sm">
                 <FaPhone className="text-[#6CD123]" />
                 Or call us at{' '}
-                <a href="tel:+919876543210" className="text-[#6CD123] hover:underline">+91 89565 85865</a>
+                <a href="tel:+918956585865" className="text-[#6CD123] hover:underline">+91 89565 85865</a>
               </div>
             </motion.div>
           </div>

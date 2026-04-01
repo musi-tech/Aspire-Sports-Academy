@@ -109,7 +109,7 @@ const jobOpenings = [
 const perks = [
   { icon: <FaTrophy className="text-yellow-400 text-3xl" />, title: 'Champion Culture', text: 'Work alongside national-level athletes and top coaches in a high-performance environment.' },
   { icon: <FaMedal className="text-green-400 text-3xl" />, title: 'Growth & Certifications', text: 'Access to funded certifications, workshops and career development programs.' },
-  { icon: <FaHeartbeat className="text-red-400 text-3xl" />, title: 'Health & Wellness', text: 'Free access to all Aspire facilities — gym, pools, courts and more.' },
+  { icon: <FaHeartbeat className="text-red-400 text-3xl" />, title: 'Health & Wellness', text: 'Free access to all Aspire facilities — pools, courts and more.' },
   { icon: <FaUsers className="text-blue-400 text-3xl" />, title: 'Collaborative Team', text: 'Join a passionate, diverse team united by a love for sports and youth development.' },
   { icon: <FaChalkboardTeacher className="text-purple-400 text-3xl" />, title: 'Mentorship Programs', text: 'Work with experienced coaches and management who invest in your professional growth.' },
   { icon: <FaHeartbeat className="text-orange-400 text-3xl" />, title: 'Competitive Compensation', text: 'Attractive salary packages with performance-based incentives and bonuses.' },
@@ -284,16 +284,16 @@ export default function Career() {
                   Are Made
                 </h2>
                 <p className="text-gray-400 text-lg leading-relaxed mb-4">
-                  Aspire Sports Academy is Nagpur's premier multi-sport facility, offering world-class infrastructure
+                  Aspire Sports Academy is Pune's premier multi-sport facility, offering world-class infrastructure
                   and coaching across 7 sports disciplines. Our academy runs programs in partnership with globally
-                  recognized brands like Michael Phelps Swimming, Padukone Badminton, Gary Kirsten Cricket, and more.
+                  recognized brands like Michael Phelps Swimming, Padukone School of Badminton.
                 </p>
                 <p className="text-gray-400 text-lg leading-relaxed mb-8">
                   With hundreds of athletes trained every month and a team of passionate professionals,
                   Aspire is committed to making sports accessible, enjoyable and performance-driven for all ages.
                 </p>
                 <div className="grid grid-cols-3 gap-4">
-                  {[['500+', 'Athletes Monthly'], ['7', 'Sports Disciplines'], ['5+', 'Global Partners']].map(([stat, label]) => (
+                  {[['500+', 'Athletes Monthly'], ['7', 'Sports Disciplines'], ['2+', 'Global Partners']].map(([stat, label]) => (
                     <div key={label} className="bg-gray-900 rounded-xl p-4 text-center border border-gray-800">
                       <div className="text-3xl font-extrabold text-[#6CD123]">{stat}</div>
                       <div className="text-gray-400 text-sm mt-1">{label}</div>
@@ -311,10 +311,10 @@ export default function Career() {
                 className="lg:w-1/2 grid grid-cols-2 gap-4"
               >
                 {[
-                  'https://res.cloudinary.com/dutlotmmd/image/upload/v1754418524/hypxfeaepoojb59qu3al.jpg',
-                  'https://res.cloudinary.com/dutlotmmd/image/upload/v1754420552/f4kfr0pgp6oijvn8v75h.jpg',
+                   'https://res.cloudinary.com/dutlotmmd/image/upload/v1754420559/h4crxhxpza6qpo5m0sfh.jpg',
+                   'https://res.cloudinary.com/dutlotmmd/image/upload/v1765722868/csuyq8ry60s5ra59zicp.jpg',
+                   'https://res.cloudinary.com/dutlotmmd/image/upload/v1754419686/fodiywhkalzhfb1g03iz.jpg',
                   'https://res.cloudinary.com/dutlotmmd/image/upload/v1754419897/oyeulfw7jrhncvaw7pua.jpg',
-                  'https://res.cloudinary.com/dutlotmmd/image/upload/v1754421785/sdshsunx7q1cczfeemyo.jpg',
                 ].map((src, i) => (
                   <div key={i} className="rounded-2xl overflow-hidden aspect-square shadow-xl">
                     <img src={src} alt="Aspire facility" className="w-full h-full object-cover hover:scale-110 transition-transform duration-700" />

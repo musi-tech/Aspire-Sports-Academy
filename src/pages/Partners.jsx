@@ -121,7 +121,7 @@ export default function Partners() {
               transition={{ duration: 0.8, delay: 0.5 }}
               className="flex flex-wrap justify-center gap-8"
             >
-              {[['5+', 'Global Partners'], ['7', 'Sports Disciplines'], ['25+', 'Locations Served']].map(([val, lbl]) => (
+              {[['2+', 'Global Partners'], ['7', 'Sports Disciplines'], ['25+', 'Locations Served']].map(([val, lbl]) => (
                 <div key={lbl} className="text-center">
                   <div className="text-4xl font-extrabold text-[#6CD123]">{val}</div>
                   <div className="text-gray-400 text-sm mt-1">{lbl}</div>

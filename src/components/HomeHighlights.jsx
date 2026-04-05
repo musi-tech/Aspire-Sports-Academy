@@ -4,19 +4,7 @@ import { Link } from 'react-router-dom';
 import { Users, CalendarDays, ArrowRight } from 'lucide-react';
 
 const cards = [
-  {
-    icon: Users,
-    title: 'Group Fitness',
-    subtitle: 'Weekly Class Timetable',
-    description:
-      "Join our energetic group classes led by certified coaches. From yoga to HIIT — there's a session for every fitness level, every day of the week.",
-    cta: 'View Timetable',
-    to: '/group-fitness',
-    color: 'from-emerald-500 to-[#6CD123]',
-    glow: 'rgba(108,209,35,0.35)',
-    bg: 'from-emerald-500/15 to-[#6CD123]/15',
-    tag: '6 Days a Week',
-  },
+ 
   {
     icon: CalendarDays,
     title: 'Upcoming Events',

@@ -114,20 +114,7 @@ export default function Partners() {
               to deliver premium coaching programs across every discipline we offer.
             </motion.p>
 
-            {/* stats row */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.5 }}
-              className="flex flex-wrap justify-center gap-8"
-            >
-              {[['2+', 'Global Partners'], ['7', 'Sports Disciplines'], ['25+', 'Locations Served']].map(([val, lbl]) => (
-                <div key={lbl} className="text-center">
-                  <div className="text-4xl font-extrabold text-[#6CD123]">{val}</div>
-                  <div className="text-gray-400 text-sm mt-1">{lbl}</div>
-                </div>
-              ))}
-            </motion.div>
+         
           </div>
         </section>
 
@@ -248,7 +235,7 @@ export default function Partners() {
                 <p className="text-gray-400 text-lg leading-relaxed mb-8">
                   Are you a sports brand, coaching institute or fitness company looking to expand your reach?
                   Partner with Aspire Sports Academy and tap into our thriving community of athletes,
-                  families and sports enthusiasts in Nagpur.
+                  families and sports enthusiasts in Pune.
                 </p>
 
                 <div className="space-y-3 mb-8">

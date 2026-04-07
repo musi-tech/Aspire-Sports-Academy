@@ -41,26 +41,19 @@ const events = {
   '2026-04-10': [{ type: 'Camp',           name: 'Cricket Coaching Camp' }],
   '2026-04-11': [{ type: 'Camp',           name: 'Cricket Coaching Camp' }],
   '2026-04-12': [{ type: 'Camp',           name: 'Cricket Coaching Camp' }],
-  '2026-04-19': [{ type: 'Workshop',       name: 'Mental Fitness Workshop' }],
-  '2026-04-25': [{ type: 'MembersDay',     name: 'Monthly Members Meet' }],
+  '2026-04-17': [{ type: 'Tournament',     name: 'Kids Badminton Tournament' }],
+  '2026-04-18': [{ type: 'Camp',           name: 'Summer Camp' }],
+  '2026-04-19': [{ type: 'Camp',           name: 'Summer Camp' }],
+  '2026-04-20': [{ type: 'Camp',           name: 'Summer Camp' }],
+  '2026-04-21': [{ type: 'Camp',           name: 'Summer Camp' }],
+  '2026-04-22': [{ type: 'Camp',           name: 'Summer Camp' }],
+  '2026-04-23': [{ type: 'Camp',           name: 'Summer Camp' }],
 
-  '2026-05-02': [{ type: 'OpenDay',        name: 'Summer Sports Open Day' }],
-  '2026-05-09': [{ type: 'Tournament',     name: 'Swimming Gala 2026' }],
-  '2026-05-10': [{ type: 'Tournament',     name: 'Swimming Gala 2026' }],
-  '2026-05-16': [{ type: 'FitnessWeek',   name: 'Summer Fitness Challenge' }],
-  '2026-05-17': [{ type: 'FitnessWeek',   name: 'Summer Fitness Challenge' }],
-  '2026-05-18': [{ type: 'FitnessWeek',   name: 'Summer Fitness Challenge' }],
-  '2026-05-23': [{ type: 'Camp',           name: 'Badminton Skills Camp' }],
-  '2026-05-30': [{ type: 'MembersDay',     name: 'Monthly Members Meet' }],
-
-  '2026-06-06': [{ type: 'Tournament',     name: 'Squash Doubles League' }],
-  '2026-06-07': [{ type: 'Tournament',     name: 'Squash Doubles League' }],
-  '2026-06-13': [{ type: 'Workshop',       name: 'Yoga & Mindfulness Day' }],
-  '2026-06-20': [{ type: 'Camp',           name: 'Tennis Intensive Camp' }],
-  '2026-06-21': [{ type: 'Camp',           name: 'Tennis Intensive Camp' }],
-  '2026-06-27': [{ type: 'MembersDay',     name: 'Monthly Members Meet' }],
-
+  '2026-05-09': [{ type: 'Tournament',     name: 'Box Cricket League Season 2' }],
+  '2026-05-10': [{ type: 'Tournament',     name: 'Box Cricket League Season 2' }],
  
+
+
 };
 
 const MONTHS = [

@@ -114,12 +114,12 @@ const sportsData = [
     description: "Experience fast-paced badminton action on our international-standard courts. From casual rallies to competitive matches, enjoy this exciting racquet sport.",
    
     images: [
-      "https://res.cloudinary.com/dutlotmmd/image/upload/v1754419674/e3zzyrgxt5wepq9slxz8.jpg",
-      "https://res.cloudinary.com/dutlotmmd/image/upload/v1754419686/fodiywhkalzhfb1g03iz.jpg",
-      "https://res.cloudinary.com/dutlotmmd/image/upload/v1754419696/duff1nokmoud48ejakdv.jpg",
-      "https://res.cloudinary.com/dutlotmmd/image/upload/v1754419704/rayeld7dfewr5c19udac.jpg",
-      "https://res.cloudinary.com/dutlotmmd/image/upload/v1754419719/vkzbuo1amsy2qtujmdu9.jpg",
-      "https://res.cloudinary.com/dutlotmmd/image/upload/v1754419728/pjupqeox9xu2z3les0gn.jpg"
+      "https://res.cloudinary.com/dutlotmmd/image/upload/v1778934943/u6wevyynecogs8bg9idf.jpg",
+      "https://res.cloudinary.com/dutlotmmd/image/upload/v1778934954/no2k4oox1sr99vfajfnf.jpg",
+      "https://res.cloudinary.com/dutlotmmd/image/upload/v1778934962/h3bmzy02xtwbmvrvzs3x.jpg",
+      "https://res.cloudinary.com/dutlotmmd/image/upload/v1778934970/c7nimajhz4va0vff7bgk.jpg",
+      "https://res.cloudinary.com/dutlotmmd/image/upload/v1778934981/piuqxwyxdttyolnuyleu.jpg",
+      "https://res.cloudinary.com/dutlotmmd/image/upload/v1778934990/mwpglbm3szbgz1mgdyg0.jpg"
     ]
   }
 ];
